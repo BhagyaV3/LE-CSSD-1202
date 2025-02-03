@@ -7,12 +7,38 @@
 </head>
 <body>
     <section>
-        <h2><a href="index.html">Home</a></h2>
-        <h2><a href="main.html">Foottracker</a></h2>
-        <h2><a href="sustainable-consumption-info.html">Sustainable Consumption</a></h2>
-        <h2><a href="waste-reduction-info.html">Waste Reduction</a></h2>
-        <h2><a href="about.html">About</a></h2>
-        <h2><a href="contact.html">Contact</a></h2>
+        <h1><u>Sign Up</u></h1>
+        <form>
+            <div>
+                <label for="name">Name: <input type="text" id="name" placeholder="Enter You're Name Here" required> </label>
+            </div> <br>
+            <div>
+                <label for="email">Email: <input type="email" id="email" placeholder="Enter Email Here" required> </label>
+            </div> <br>
+            <div>
+                <label for="pass">Password: <input type="password" id="pass" placeholder="Enter Password Here" required> </label>
+            </div> <br>
+            <div>
+                <label for="goal">Whats You're Main Goal Using ECOfootTracker: </label>
+                <select id="goal" name="goal" required>
+                    <option value="" selected disabled hidden>Please Select An Option</option>
+                    <option>I want to reduce my carbon footprint</option>
+                    <option>I want to know my carbon emissions</option>
+                    <option>I want to maintian my current carbon emissions</option>
+                </select>
+            </div> <br>
+            <div> <button name="userInfo" type="submit">Sign Up</button> </div> <br>
+        </form>
+            <div> <label>Already Have An Account? <button><a href="login.html" style="text-decoration:none">Login</a></button></label></div>
+    </section>
+
+    <section> <br>
+        <h4><a href="index.html">Home</a> <label>|</label>
+        <a href="main.html">Foottracker</a> <label>|</label>
+        <a href="sustainable-consumption-info.html">Sustainable Consumption</a> <label>|</label>
+        <a href="waste-reduction-info.html">Waste Reduction</a> <label>|</label>
+        <a href="about.html">About</a> <label>|</label>
+        <a href="contact.html">Contact</a></h4>
     </section>
 </body>
 </html>
