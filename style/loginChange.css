@@ -4,7 +4,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background: url('logBackground.png') no-repeat;
+    background: url('photos/logBackground.png') no-repeat;
     background-size: cover;
 }
 
