@@ -15,12 +15,20 @@ body {
     padding: 10px 40px;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(1.5px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
 }
 
-.loginC .forgotC {
+.loginC .forgotC a {
     color: white;
+    text-decoration: none;
+    position: relative;
+    right: -250px;
+    top: -18px;
+}
+
+.loginC .forgotC a:hover {
+    text-decoration: underline;
 }
 
 .loginC .epC input {

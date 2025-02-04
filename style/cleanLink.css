@@ -2,3 +2,8 @@ a:link, a:visited {
     color: blue;
     text-decoration: none;
 }
+
+input[type="checkbox"] {
+    display: none;
+    
+}
