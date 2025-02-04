@@ -15,8 +15,12 @@ body {
     padding: 10px 40px;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
+}
+
+.loginC .showForgotC {
+    justify-content: space-between;
 }
 
 .loginC .epC input {
@@ -62,4 +66,18 @@ body {
     border-radius: 155px;
     border: none;
     font-size: 17px;
+}
+
+.loginC .registerC a {
+    color: white;
+    position: ce;
+    right: 100px; 
+}
+
+.loginC .registerC a:hover {
+    text-decoration: underline;
+}
+
+.loginC .registerC {
+    text-align: center;
 }
