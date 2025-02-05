@@ -4,7 +4,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background: url('photos/logBackground.png') no-repeat;
+    background: url('photos/logBackground.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -15,7 +15,7 @@ body {
     padding: 10px 40px;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(3px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
 }
 
