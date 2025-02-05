@@ -1,0 +1,82 @@
+.navBarC {
+    width: 100%;
+    background-color: rgba(28, 28, 28, 0.446);
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 0%;
+    top: 0%;
+    display: flex;
+    text-decoration: none;
+}
+
+.navBarC h1 {
+    position: relative;
+    left: 15px;
+    top: -2px;
+}
+
+.navBarC ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    left: 31.5%;
+}
+
+.navBarC a {
+    text-align: center;
+    display:inline-block;
+    line-height: 35px;
+    width: 95px;
+}
+
+.navBarC .listC a:hover {
+    background-color: rgba(172, 172, 172, 0.446);
+}
+
+.navLogC button:hover {
+    background-color: rgba(172, 172, 172, 0.446);
+}
+
+.navLogC button {
+    position: absolute;
+    right: 30px;
+    top: 24px;
+    width: 100px;
+    height: 35px;
+    background: rgba(87, 87, 87, 0.446);
+    outline: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(119, 119, 119, 0.446);
+    border-radius: 155px;
+    border: none;
+    font-size: 17px;
+}
+
+.navBarC .listC .dropdownC {
+    position: absolute;
+    text-align: center;
+    top: 35px;
+    display: block;
+    width: 0%;
+    display: none;
+}
+
+.navBarC .listC .dropdownC a {
+    position:relative;
+    left: -102.2px;
+}
+
+.navBarC .listC .dropdownC a:hover {
+    background-color: rgba(172, 172, 172, 0.446);
+}
+
+.navBarC .listC .dropdownParentC:hover .dropdownC {
+    display: block;
+}
+
+.navBarC img {
+    position: absolute;
+    width: 10px;
+    right: 53.6%;
+    top: 29px;
+}
