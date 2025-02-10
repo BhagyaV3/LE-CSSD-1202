@@ -1,6 +1,22 @@
+@font-face {
+    font-family: titleFont;
+    src: url(font/Goodboy.ttf);
+}
+
+@font-face {
+    font-family: baseFont;
+    src: url(font/KGHAPPYSolid.ttf);
+}
+
+@font-face {
+    font-family: loginFont;
+    src: url(font/Happy.ttf);
+}
+
 .navBarC {
     width: 100%;
-    background-color: rgba(28, 28, 28, 0.446);
+    height: 9.3%;
+    background-color: rgba(28, 28, 28, 0.446);;
     position: absolute;
     color: rgb(255, 255, 255);
     left: 0%;
@@ -11,8 +27,10 @@
 
 .navBarC h1 {
     position: relative;
-    left: 15px;
-    top: -2px;
+    left: 115px;
+    top: -13px;
+    font-size: 30px;
+    font-family: titleFont;
 }
 
 .navBarC ul {
@@ -20,13 +38,16 @@
     display: flex;
     position: relative;
     left: 31.5%;
+    font-family: baseFont;
 }
 
 .navBarC a {
+    position: relative;
     text-align: center;
-    display:inline-block;
+    display: inline-block;
+    right: 100px;
     line-height: 35px;
-    width: 95px;
+    width: 115px;
 }
 
 .navBarC .listC a:hover {
@@ -40,30 +61,49 @@
 .navLogC button {
     position: absolute;
     right: 30px;
-    top: 24px;
+    top: 17px;
     width: 100px;
     height: 35px;
     background: rgba(87, 87, 87, 0.446);
     outline: none;
-    color: rgb(255, 255, 255);
+    color: white;
     border: 2px solid rgba(119, 119, 119, 0.446);
     border-radius: 155px;
     border: none;
-    font-size: 17px;
+    font-size: 15px;
+    font-family: loginFont;
 }
 
 .navBarC .listC .dropdownC {
     position: absolute;
     text-align: center;
-    top: 35px;
+    top: 52px;
+    left: 55px;
     display: block;
-    width: 0%;
+    width: 75px;
+    height: 103px;
     display: none;
+    background-color: rgba(28, 28, 28, 0.446);
 }
 
 .navBarC .listC .dropdownC a {
-    position:relative;
-    left: -102.2px;
+    position: relative;
+    top: -17px;
+    right: 40px;
+    line-height: 30px;
+    font-family: baseFont;
+}
+
+.navBarC .listC li.dropdownParentC a {
+    position: relative;
+    text-align: left;
+    font-size: 13.5px;
+    text-indent: 8.5px;
+}
+
+.navBarC .listC li.dropdownParentC .dropdownC a {
+    text-align: center;
+    font-size: 11px;
 }
 
 .navBarC .listC .dropdownC a:hover {
@@ -77,6 +117,11 @@
 .navBarC img {
     position: absolute;
     width: 10px;
-    right: 53.7%;
-    top: 29px;
+    right: 50.3%;
+    top: 27.8px;
+}
+
+.navBarC .listC .spacerC {
+    position: absolute;
+    transform: translate(11.8px, -29.5px);
 }
