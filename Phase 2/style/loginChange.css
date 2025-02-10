@@ -63,8 +63,10 @@ body {
 
 .loginC h1 {
     font-size: 55px;
+    letter-spacing: 4px;
     font-family: loger;
     text-align: center;
+    color: rgb(236, 236, 236);
 }
 
 .loginC .inputC {
@@ -75,6 +77,7 @@ body {
 }
 
 .loginC .showC label {
+    cursor: pointer;
     font-family: norm;
 }
 
@@ -87,7 +90,7 @@ body {
 .loginC .submitC button {
     width: 100%;
     height: 35px;
-    background-color: rgba(135, 135, 135, 0.318);
+    background-color: rgba(146, 146, 146, 0.318);
     outline: none;
     color: rgb(193, 193, 193);
     border-radius: 155px;
@@ -96,7 +99,8 @@ body {
 }
 
 .loginC .submitC button:hover {
-    background-color: rgba(172, 172, 172, 0.446);
+    cursor: pointer;
+    background-color: rgba(187, 187, 187, 0.446);
     color: white;
 }
 
@@ -114,4 +118,33 @@ body {
 .loginC .registerC {
     text-align: center;
     font-family: norm;
+}
+
+.loginC .showC input {
+    display: none;
+}
+
+.loginC .showC .checkC {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.344);;
+    border-radius: 7px;
+    display: inline-block;
+    margin-right: 9px;
+    cursor: pointer;
+}
+
+.loginC .showC input[type="checkbox"]:checked + .checkC::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #4f73f7;
+    border-radius: 5px;
+    background-image: url('photos/checkmark.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

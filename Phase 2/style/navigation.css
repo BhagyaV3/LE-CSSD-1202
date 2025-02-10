@@ -38,6 +38,7 @@
     display: flex;
     position: relative;
     left: 31.5%;
+    font-size: 14px;
     font-family: baseFont;
 }
 
@@ -72,23 +73,24 @@
     border: none;
     font-size: 15px;
     font-family: loginFont;
+    cursor: pointer;
 }
 
 .navBarC .listC .dropdownC {
     position: absolute;
     text-align: center;
-    top: 52px;
+    top: 54px;
     left: 55px;
     display: block;
     width: 75px;
-    height: 103px;
+    height: 101px;
     display: none;
     background-color: rgba(28, 28, 28, 0.446);
 }
 
 .navBarC .listC .dropdownC a {
     position: relative;
-    top: -17px;
+    top: -19px;
     right: 40px;
     line-height: 30px;
     font-family: baseFont;
@@ -117,11 +119,11 @@
 .navBarC img {
     position: absolute;
     width: 10px;
-    right: 50.3%;
-    top: 27.8px;
+    right: 50.4%;
+    top: 26px;
 }
 
 .navBarC .listC .spacerC {
     position: absolute;
-    transform: translate(11.8px, -29.5px);
+    transform: translate(11.8px, -28px);
 }
