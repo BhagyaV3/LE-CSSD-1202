@@ -19,6 +19,9 @@ body {
 }
 
 .loginC {
+    position: relative;
+    right: 180px;
+    top: -160px;
     width: 375px;
     background: transparent;
     color: rgb(255, 255, 255);
