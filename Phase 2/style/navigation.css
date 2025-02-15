@@ -14,40 +14,40 @@
 }
 
 html, body {
-    width: 1920px;
-    height: 1080px;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .navBarC {
     width: 100%;
-    height: 9.3%;
-    background-color: rgba(28, 28, 28, 0.446);;
+    height: 7.8vh;
+    background-color: rgba(28, 28, 28, 0.446);
     position: absolute;
     color: rgb(255, 255, 255);
-    left: 0%;
-    top: 0%;
+    left: 0;
+    top: 0;
     display: flex;
     text-decoration: none;
 }
 
 .navBarC h1 {
     position: relative;
-    left: 115px;
-    top: -13px;
-    font-size: 30px;
+    left: 6vw;
+    top: -1vh;
+    font-size: 1.5vw;
     font-family: titleFont;
-    letter-spacing: 3px;
+    letter-spacing: 0.2vw;
 }
 
 .navBarC ul {
     list-style-type: none;
     display: flex;
     position: relative;
-    left: 31.5%;
-    font-size: 14px;
+    left: 34vw;
+    top: 1.2vh;
+    font-size: 0.7vw;
     font-family: baseFont;
 }
 
@@ -55,9 +55,9 @@ html, body {
     position: relative;
     text-align: center;
     display: inline-block;
-    right: 100px;
-    line-height: 35px;
-    width: 115px;
+    right: 5vw;
+    line-height: 2.5vh;
+    width: 6vw;
 }
 
 .navBarC .listC a:hover {
@@ -70,52 +70,51 @@ html, body {
 
 .navLogC button {
     position: absolute;
-    right: 30px;
-    top: 17px;
-    width: 100px;
-    height: 35px;
+    right: 1vw;
+    top: 1.8vh;
+    width: 5.2vw;
+    height: 4vh;
     background: rgba(87, 87, 87, 0.446);
     outline: none;
     color: white;
-    border: 2px solid rgba(119, 119, 119, 0.446);
+    border: 0.1vw solid rgba(119, 119, 119, 0.446);
     border-radius: 155px;
-    border: none;
-    font-size: 15px;
+    font-size: 0.8vw;
     font-family: loginFont;
     cursor: pointer;
-    letter-spacing: 2px;
+    letter-spacing: 0.1vw;
 }
 
 .navBarC .listC .dropdownC {
     position: absolute;
-    text-align: center;
-    top: 54px;
-    left: 55px;
+    top: 5.2vh;
+    left: 3.1vw;
     display: block;
-    width: 75px;
-    height: 101px;
+    width: 3.95vw;
+    height: 9.37vh;
     display: none;
     background-color: rgba(28, 28, 28, 0.446);
 }
 
 .navBarC .listC .dropdownC a {
     position: relative;
-    top: -19px;
-    right: 40px;
-    line-height: 30px;
+    text-align: center;
+    top: -2.7vh;
+    right: 2.05vw;
+    line-height: 3vh;
     font-family: baseFont;
 }
 
 .navBarC .listC li.dropdownParentC a {
     position: relative;
     text-align: left;
-    font-size: 13.5px;
-    text-indent: 8.5px;
+    font-size: 0.7vw;
+    text-indent: 0.4vw;
 }
 
 .navBarC .listC li.dropdownParentC .dropdownC a {
     text-align: center;
-    font-size: 11px;
+    font-size: 0.6vw;
 }
 
 .navBarC .listC .dropdownC a:hover {
@@ -128,12 +127,12 @@ html, body {
 
 .navBarC img {
     position: absolute;
-    width: 10px;
-    right: 50.4%;
-    top: 26px;
+    width: 0.5vw;
+    right: 51.3vw;
+    top: 3.3vh;
 }
 
 .navBarC .listC .spacerC {
     position: absolute;
-    transform: translate(11.8px, -28px);
+    transform: translate(0.8vw, -2.3vh);
 }

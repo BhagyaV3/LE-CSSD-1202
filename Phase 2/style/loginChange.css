@@ -20,9 +20,10 @@ body {
 
 .loginC {
     position: relative;
-    right: 180px;
-    top: -160px;
-    width: 375px;
+    right: 0vw;
+    top: 0vh;
+    width: 20vw;
+    height: 40vh;
     background: transparent;
     color: rgb(255, 255, 255);
     padding: 10px 40px;
