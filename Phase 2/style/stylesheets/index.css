@@ -4,6 +4,6 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background: url('photos/logBackground.jpg') no-repeat;
+    background: url('photos\city-with-green-spaces-iStock-1057157166.jpg') no-repeat;
     background-size: cover;
 }
