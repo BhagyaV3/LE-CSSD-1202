@@ -1,16 +1,16 @@
 @font-face {
     font-family: titleFont;
-    src: url(font/Goodboy.ttf);
+    src: url(../fonts/Goodboy.ttf);
 }
 
 @font-face {
     font-family: baseFont;
-    src: url(font/KGHAPPYSolid.ttf);
+    src: url(../fonts/KGHAPPYSolid.ttf);
 }
 
 @font-face {
     font-family: loginFont;
-    src: url(font/Happy.ttf);
+    src: url(../fonts/Happy.ttf);
 }
 
 html, body {

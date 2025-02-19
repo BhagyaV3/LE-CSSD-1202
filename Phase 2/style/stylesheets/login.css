@@ -1,11 +1,11 @@
 @font-face {
     font-family: loger;
-    src: url(font/Newake.otf);
+    src: url(../fonts/Newake.otf);
 }
 
 @font-face {
     font-family: norm;
-    src: url(font/Comfortaa.ttf);
+    src: url(../fonts/Comfortaa.ttf);
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background: url('photos/logBackground.jpg') no-repeat;
+    background: url('../photos/logBackground.jpg') no-repeat;
     background-size: cover;
 }
 
