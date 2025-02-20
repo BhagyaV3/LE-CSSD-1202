@@ -35,22 +35,22 @@ body {
     text-decoration: none;
 }
 
-/* .indexC p a:link {
-    color: rgb(0, 162, 255);
+/* .indexC p a {
     text-decoration: none;
+}
+
+.indexC p a:link {
+    color: rgb(0, 162, 255);
 }
 
 .indexC p a:hover {
     color: rgb(255, 166, 0);
-    text-decoration: none;
 }
 
 .indexC p a:active {
     color: rgb(0, 255, 42);
-    text-decoration: none;
 }
 
 .indexC p a:visited {
     color: rgb(0, 143, 24);
-    text-decoration: none;
 } */
