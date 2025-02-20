@@ -1,19 +1,19 @@
-@font-face {
+/* @font-face {
     font-family: norm;
     src: url(../fonts/Comfortaa.ttf);
-}
+} */
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
-    background: url('../photos/city-with-green-spaces-iStock-1057157166.jpg') no-repeat;
-    background-size: cover;
+    /* overflow: hidden; */
+    /* background: url('../photos/city-with-green-spaces-iStock-1057157166.jpg') no-repeat;
+    background-size: cover; */
 }
 
-.indexC {
+.trackerC {
     position: relative;
     right: 0vw;
     top: 0vh;
@@ -25,32 +25,12 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.329);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
-    font-family: norm;
+    /* font-family: norm;
     color: rgb(255, 255, 255);
-    text-align: center;
+    text-align: center; */
 }
 
-.indexC p a {
+/* .indexC p a {
     color: rgb(0, 255, 42);
-    text-decoration: none;
-}
-
-/* .indexC p a:link {
-    color: rgb(0, 162, 255);
-    text-decoration: none;
-}
-
-.indexC p a:hover {
-    color: rgb(255, 166, 0);
-    text-decoration: none;
-}
-
-.indexC p a:active {
-    color: rgb(0, 255, 42);
-    text-decoration: none;
-}
-
-.indexC p a:visited {
-    color: rgb(0, 143, 24);
     text-decoration: none;
 } */
