@@ -1,6 +1,6 @@
 @font-face {
     font-family: norm;
-    src: url(../fonts/Comfortaa.ttf);
+    src: url(fonts/Comfortaa.ttf);
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background: url('../photos/shutterstock_1288634614.jpg') no-repeat;
+    background: url('photos/shutterstock_1288634614.jpg') no-repeat;
     background-size: cover;
 }
 

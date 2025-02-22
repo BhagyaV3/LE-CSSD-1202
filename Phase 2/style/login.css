@@ -1,11 +1,11 @@
 @font-face {
     font-family: loger;
-    src: url(../fonts/Newake.otf);
+    src: url(fonts/Newake.otf);
 }
 
 @font-face {
     font-family: norm;
-    src: url(../fonts/Comfortaa.ttf);
+    src: url(fonts/Comfortaa.ttf);
 }
 
 body {
@@ -14,16 +14,16 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background: url('../photos/logBackground.jpg') no-repeat;
+    background: url('photos/logBackground.jpg') no-repeat;
     background-size: cover;
 }
 
 .loginC {
     position: relative;
-    right: 0vw;
-    top: 0vh;
+    right: -0.75vw;
+    top: -8vh;
     width: 20vw;
-    height: 40vh;
+    height: 42vh;
     background: transparent;
     color: rgb(255, 255, 255);
     padding: 10px 40px;
@@ -110,8 +110,7 @@ body {
 
 .loginC .registerC a {
     color: white;
-    position: ce;
-    right: 100px; 
+    right: 100px;
     font-family: norm;
 }
 
@@ -121,6 +120,8 @@ body {
 
 .loginC .registerC {
     text-align: center;
+    position: relative;
+    top: 1vh;
     font-family: norm;
 }
 

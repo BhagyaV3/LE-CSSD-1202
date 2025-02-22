@@ -1,21 +1,21 @@
 @font-face {
     font-family: titleFont;
-    src: url(../fonts/Goodboy.ttf);
+    src: url(fonts/Goodboy.ttf);
 }
 
 @font-face {
     font-family: baseFont;
-    src: url(../fonts/KGHAPPYSolid.ttf);
+    src: url(fonts/KGHAPPYSolid.ttf);
 }
 
 @font-face {
     font-family: loginFont;
-    src: url(../fonts/Happy.ttf);
+    src: url(fonts/Happy.ttf);
 }
 
-html, body {
-    width: 100vw;
-    height: 100vh;
+html body {
+    width: 1900px;
+    height: 1080px;
     margin: 0;
     padding: 0;
     font-size: 1rem;
@@ -127,9 +127,9 @@ html, body {
 }
 
 .navBarC img {
-    position: absolute;
+    position: relative;
     width: 0.5vw;
-    right: 51.3vw;
+    left: 51.3vw;
     top: 3.3vh;
 }
 
