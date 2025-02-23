@@ -16,9 +16,13 @@
 html body {
     width: 1900px;
     height: 1080px;
-    margin: 0;
-    padding: 0;
+    margin: none;
+    padding: none;
     font-size: 1rem;
+}
+
+br {
+    user-select: none;
 }
 
 .navBarC {
@@ -59,6 +63,7 @@ html body {
     right: 5vw;
     line-height: 2.5vh;
     width: 6vw;
+    z-index: 10;
 }
 
 .navBarC .listC a:hover {
@@ -136,5 +141,7 @@ html body {
 
 .navBarC .listC .spacerC {
     position: absolute;
+    user-select: none;
     transform: translate(0.8vw, -2.3vh);
+    z-index: 1;
 }

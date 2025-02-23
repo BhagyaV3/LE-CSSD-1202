@@ -28,7 +28,7 @@ body {
     color: rgb(255, 255, 255);
     padding: 10px 40px;
     border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.329);
+    border: 3px solid rgba(255, 255, 255, 0.329);
     backdrop-filter: blur(3px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
 }
@@ -83,6 +83,7 @@ body {
 .loginC .showC label {
     cursor: pointer;
     font-family: norm;
+    user-select: none;
 }
 
 .loginC img {
@@ -96,6 +97,7 @@ body {
     height: 35px;
     background-color: rgba(146, 146, 146, 0.318);
     outline: none;
+    border: 5px solid rgba(255, 255, 255, 0.329);
     color: rgb(193, 193, 193);
     border-radius: 155px;
     border: none;
