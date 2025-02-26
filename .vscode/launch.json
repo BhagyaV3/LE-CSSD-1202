@@ -8,7 +8,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "file": "${workspaceFolder}/Phase 2/html/index.html"
+            "file": "${workspaceFolder}/Phase 2/index.html"
         }
     ]
 }
