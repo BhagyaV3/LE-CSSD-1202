@@ -19,26 +19,28 @@ body {
 }
 
 .loginC {
-    position: relative;
-    right: -0.75vw;
-    top: -8vh;
-    width: 20vw;
-    height: 42vh;
+    position: absolute;
+    right: 34.75vw;
+    top: 23vh;
+    width: 25vw;
+    height: 54.5vh;
     background: transparent;
     color: rgb(255, 255, 255);
-    padding: 10px 40px;
-    border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(3px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
+    padding: 0.5vw 5vh;
+    border-radius: 3.5vh;
+    border: 0.2vw solid rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(0.2vw);
+    box-shadow: 0 0 10vw rgba(255, 255, 255, 0.329);
+    min-width: 25vw;
+    max-width: 25vw;
 }
 
 .loginC .forgotC a {
+    position: relative;
     color: white;
     text-decoration: none;
-    position: relative;
-    right: -218px;
-    top: -18px;
+    left: 14.5vw;
+    top: -4.5vh;
     font-family: norm;
 }
 
@@ -47,14 +49,14 @@ body {
 }
 
 .loginC .epC input {
-    width: 86.3%;
-    height: 89%;
+    width: 21vw;
+    height: 5.3vh;
     background: transparent;
     outline: none;
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.344);
-    border-radius: 55px;
-    padding: 0px 30px 0px 10px;
+    border: 0.15vw solid rgba(255, 255, 255, 0.344);
+    border-radius: 4vw;
+    padding: 0px 2.4vw 0px 10px;
 }
 
 .loginC .epC input::placeholder {
@@ -66,42 +68,50 @@ body {
 }
 
 .loginC h1 {
-    font-size: 55px;
-    letter-spacing: 4px;
+    position: relative;
+    top: -2vh;
+    font-size: 3.5vw;
+    letter-spacing: 0.4vw;
     font-family: loger;
     text-align: center;
     color: rgb(236, 236, 236);
 }
 
 .loginC .inputC {
-    width: 100%;
-    height: 40px;
-    margin: 10px 0;
     position: relative;
+    top: -2.5vh;
+    width: 10vw;
+    height: 6.4vh;
+    margin: 0.7vw 0;
 }
 
 .loginC .showC label {
+    position: relative;
+    top: -2vh;
     cursor: pointer;
     font-family: norm;
     user-select: none;
 }
 
 .loginC img {
-    position: absolute;
-    top: 3px;
-    right: 16px;
+    position: relative;
+    left: 22vw;
+    top: -5.2vh;
 }
 
 .loginC .submitC button {
-    width: 100%;
-    height: 35px;
+    position: relative;
+    left: 0.3vw;
+    top: -1vh;
+    width: 24vw;
+    height: 6vh;
     background-color: rgba(146, 146, 146, 0.318);
     outline: none;
-    border: 5px solid rgba(255, 255, 255, 0.329);
+    border: 1.5vw solid rgba(255, 255, 255, 0.329);
     color: rgb(193, 193, 193);
-    border-radius: 155px;
+    border-radius: 10vw;
     border: none;
-    font-size: 17px;
+    font-size: 1.4vw;
 }
 
 .loginC .submitC button:hover {
@@ -112,7 +122,6 @@ body {
 
 .loginC .registerC a {
     color: white;
-    right: 100px;
     font-family: norm;
 }
 
@@ -123,7 +132,7 @@ body {
 .loginC .registerC {
     text-align: center;
     position: relative;
-    top: 1vh;
+    top: -1vh;
     font-family: norm;
 }
 
@@ -133,24 +142,24 @@ body {
 
 .loginC .showC .checkC {
     position: relative;
-    width: 15px;
-    height: 15px;
-    top: 3px;
-    left: 3px;
-    border: 2px solid rgba(255, 255, 255, 0.344);;
-    border-radius: 7px;
+    width: 1vw;
+    height: 2vh;
+    left: 0.2vw;
+    top: 0.4vh;
+    border: 0.15vw solid rgba(255, 255, 255, 0.344);;
+    border-radius: 0.4vw;
     display: inline-block;
-    margin-right: 9px;
+    margin-right: 0.8vw;
     cursor: pointer;
 }
 
 .loginC .showC input[type="checkbox"]:checked + .checkC::after {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 1vw;
+    height: 2vh;
     background-color: #4f73f7;
-    border-radius: 5px;
+    border-radius: 0.2vw;
     background-image: url('photos/checkmark.png');
     background-size: cover;
     background-position: center;
