@@ -33,11 +33,11 @@ body {
 .signupC {
     text-align: center;
     position: absolute;
-    left: 39.5vw;
-    top: 28vh;
-    width: 20vw;
+    left: 37vw;
+    top: 22vh;
+    width: 24.5vw;
     padding: 10px 40px;
-    border-radius: 10px;
+    border-radius: 3vh;
     border: 3px solid rgba(255, 255, 255, 0.329);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
@@ -58,8 +58,8 @@ body {
 }
 
 .signupC .infoC input {
-    width: 18.5vw;
-    height: 4vh;
+    width: 21vw;
+    height: 5vh;
     background: transparent;
     outline: none;
     border: 2px solid rgba(255, 255, 255, 0.344);
@@ -97,7 +97,7 @@ body {
 
 .signupC .nextC {
     position: relative;
-    left: 7.5vw;
+    left: 9.3vw;
     top: -2.3vh;
 }
 
@@ -118,7 +118,9 @@ body {
 }
 
 .signupC .loginC {
-    font-size: 0.85vw;
+    position: relative;
+    top: -1.5vh;
+    font-size: 1vw;
 }
 
 .signupC .loginC a {
