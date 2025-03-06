@@ -14,7 +14,8 @@
       opacity: 1;
     }
     50% {
-      transform: scale(1.5);
+        color: aqua;
+      transform: scale(10.5);
       opacity: 0.5;
     }
     100% {
@@ -105,8 +106,8 @@ body {
     text-decoration: underline;
 }
 
-.signupC .nextC a:focus + .infoC {
-    color: aqua;
+.signupC .nextC a:focus {
+    
     animation: nextPhase;
     animation-duration: 2s;
 }
