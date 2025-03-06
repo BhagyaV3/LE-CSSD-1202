@@ -124,8 +124,7 @@ br {
     display: block;
 }
 
-.navBarC img {
-    position: relative;
+.navBarC .listC .dropdownParentC img {
     width: 0.6vw;
     height: 1vh;
 }
