@@ -60,6 +60,13 @@ br {
     z-index: 10;
 }
 
+.navBarC .logoC img {
+    position: relative;
+    width: 4.5vw;
+    height: 10vh;
+    left: 5vw;
+}
+
 .navBarC .listC a:hover {
     background-color: rgba(172, 172, 172, 0.446);
 }
@@ -80,7 +87,7 @@ br {
     border: 0.1vw solid rgba(119, 119, 119, 0.446);
     border-radius: 155px;
     font-size: 0.8vw;
-    font-family: norm;
+    font-family: norsm;
     cursor: pointer;
     letter-spacing: 0.1vw;
 }
