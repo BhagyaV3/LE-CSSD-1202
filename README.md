@@ -13,12 +13,11 @@
    - About
      - Sort all the information into divs
   - Resources
-     - If necessary, do research to sort the widgets and everything else accordingly
-   - Navigation Bar
-      - Finalize the navigation bar with Shlok
+     - If necessary, do research to sort the widgets and everything else accordingly Shlok
 - Shlok:
    - Make dark mode
-   - Make the input widgets within the foot widgets
+   - Make the input widgets within the foot    - widgets
+   - rename files
    - Make custom error messages
 - Atheen:
   - Finalize the Resources pages
