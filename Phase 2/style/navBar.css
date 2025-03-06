@@ -4,13 +4,8 @@
 }
 
 @font-face {
-    font-family: baseFont;
-    src: url(fonts/KGHAPPYSolid.ttf);
-}
-
-@font-face {
-    font-family: loginFont;
-    src: url(fonts/Happy.ttf);
+    font-family: norm;
+    src: url(fonts/Comfortaa.ttf);
 }
 
 html body {
@@ -51,7 +46,7 @@ br {
     left: 34vw;
     top: 1.2vh;
     font-size: 0.7vw;
-    font-family: baseFont;
+    font-family: norm;
 }
 
 .navBarC a {
@@ -84,7 +79,7 @@ br {
     border: 0.1vw solid rgba(119, 119, 119, 0.446);
     border-radius: 155px;
     font-size: 0.8vw;
-    font-family: loginFont;
+    font-family: norm;
     cursor: pointer;
     letter-spacing: 0.1vw;
 }
@@ -106,7 +101,7 @@ br {
     top: -2.7vh;
     right: 2.05vw;
     line-height: 3vh;
-    font-family: baseFont;
+    font-family: norm;
 }
 
 .navBarC .listC li.dropdownParentC a {
