@@ -1,0 +1,25 @@
+- Bhagya:
+   - Index
+      - Edit homepage so that the welcome text is aligned to the left, and the foot preview is aligned to the right (like below):
+         ![Screenshot 2025-03-05 195523](https://github.com/user-attachments/assets/de6e1230-17e3-4bc5-a7e4-c3fb6ff1d861)
+   - Tracker
+      - Change the background to an image of a city
+      - Make the Foottracker's widgets and animate them
+      - Make a calendar to the Foottracker's left
+      - Daily goals to the right (based on the widgets) (if possible)
+   - Contact
+      - Change background to solid/gradient
+      - Have separate colorful divs with our information in them (and facials)
+   - About
+     - Sort all the information into divs
+  - Resources
+     - If necessary, do research to sort the widgets and everything else accordingly
+   - Navigation Bar
+      - Finalize the navigation bar with Shlok
+- Shlok:
+   - Make dark mode
+   - Make the input widgets within the foot widgets
+   - Make custom error messages
+- Atheen:
+  - Finalize the Resources pages
+  - Finalize the research
