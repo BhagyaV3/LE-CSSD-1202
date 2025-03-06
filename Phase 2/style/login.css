@@ -1,8 +1,3 @@
-@font-face {
-    font-family: norm;
-    src: url(fonts/Comfortaa.ttf);
-}
-
 body {
     display: flex;
     justify-content: center;

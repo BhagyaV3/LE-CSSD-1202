@@ -1,3 +1,23 @@
+@font-face {
+    font-family: norm;
+    src: url(fonts/Comfortaa.ttf);
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(fonts/Goodboy.ttf);
+}
+
+@font-face {
+    font-family: thine;
+    src: url(fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: loger;
+    src: url(fonts/Newake.otf);
+}
+
 a:link, a:visited {
     color: white;
     text-decoration: none;
