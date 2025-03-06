@@ -26,8 +26,6 @@ body {
     border: 0.2vw solid rgba(255, 255, 255, 0.329);
     backdrop-filter: blur(0.2vw);
     box-shadow: 0 0 10vw rgba(255, 255, 255, 0.329);
-    min-width: 25vw;
-    max-width: 25vw;
 }
 
 .loginC .forgotC a {
