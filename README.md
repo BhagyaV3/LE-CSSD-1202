@@ -1,1 +1,2 @@
-* sss
+- Bhagya:
+   - Edit homepage so that the welcome text is aligned to the left, and the foot preview is aligned to the right.
