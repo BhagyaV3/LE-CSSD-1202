@@ -5,59 +5,45 @@
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     overflow: hidden;
-    background: url('photos/shutterstock_1288634614.jpg') no-repeat;
+    background-color: white;
+    background-image: url('photos/cover.png');
     background-size: cover;
+}
+
+.contactUsC {
+    display: block;
+    align-items: center;
+    text-align: center;
+    border: 0.2vw solid black;
+}
+
+.contactUsC ul {
+    display: inline-block;
+    list-style: none;
 }
 
 .contactC {
     position: relative;
-    right: 0vw;
-    top: 0vh;
-    width: 60vh;
-    height: 40vh;
-    background: rgba(0, 75, 145, 0.678);
-    padding: 50px;
-    border-radius: 50px;
-    border: 2px solid rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
-    font-family: norm;
-    color: rgb(255, 255, 255);
+    right: 10vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
 }
 
-.contactC div {
-    padding-top: 30px;
+.contactC ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.contactC p a {
-    color: rgb(0, 255, 42);
-    text-decoration: none;
+.contactC li {
+    margin: 10px;
+    border: 0.3vw solid rgba(255, 255, 255, 0.542);
+    border-radius: 3vw;
+    color: white;
+    padding: 1vw;
 }
-
-/* .contactC p a {
-    text-decoration: none;
-} */
-
-/* .contactC p a:link {
-    color: rgb(0, 162, 255);
-    text-decoration: none;
-}
-
-.contactC p a:hover {
-    color: rgb(255, 166, 0);
-    text-decoration: none;
-}
-
-.contactC p a:active {
-    color: rgb(0, 255, 42);
-    text-decoration: none;
-}
-
-.contactC p a:visited {
-    color: rgb(0, 143, 24);
-    text-decoration: none;
-} */
