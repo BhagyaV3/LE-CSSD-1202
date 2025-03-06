@@ -125,16 +125,14 @@ br {
 }
 
 .navBarC img {
-    position: absolute;
+    position: relative;
     width: 0.6vw;
     height: 1.2vh;
-    left: 48.7vw;
-    top: 3.4vh;
 }
 
 .navBarC .listC .spacerC {
     position: absolute;
     user-select: none;
-    transform: translate(0.95vw, -2.3vh);
+    transform: translate(0.92vw, -2.3vh);
     z-index: 1;
 }
