@@ -30,6 +30,8 @@ body {
 }
 
 .contactC ul {
+    position: relative;
+    left: 5vw;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -41,4 +43,14 @@ body {
     border-radius: 3vw;
     color: white;
     padding: 1vw;
+}
+
+.contactC ul li h3 {
+    font-family: norm;
+}
+
+.contactC ul li p {
+    font-family: thine;
+    font-size: 1.1vw;
+    font-weight: bold;
 }
