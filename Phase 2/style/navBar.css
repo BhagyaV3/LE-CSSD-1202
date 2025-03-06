@@ -135,6 +135,6 @@ br {
 .navBarC .listC .spacerC {
     position: absolute;
     user-select: none;
-    transform: translate(0.8vw, -2.3vh);
+    transform: translate(0.95vw, -2.3vh);
     z-index: 1;
 }
