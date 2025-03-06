@@ -42,8 +42,8 @@ br {
 .navBarC ul {
     list-style-type: none;
     display: flex;
-    position: relative;
-    left: 34vw;
+    position: absolute;
+    left: 40vw;
     top: 1.2vh;
     font-size: 0.8vw;
     letter-spacing: 0.1vw;
