@@ -4,11 +4,6 @@
 }
 
 @font-face {
-    font-family: titleFont;
-    src: url(fonts/Goodboy.ttf);
-}
-
-@font-face {
     font-family: thine;
     src: url(fonts/Roboto-Thin.ttf);
 }
