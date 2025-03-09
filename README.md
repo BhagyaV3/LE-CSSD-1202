@@ -2,14 +2,6 @@
       - Edit homepage so that the welcome text is aligned to the left, and the foot preview is aligned to the right (like below):
          ![Screenshot 2025-03-05 195523](https://github.com/user-attachments/assets/de6e1230-17e3-4bc5-a7e4-c3fb6ff1d861)
    - Tracker
-      - Change the background to an image of a city
-      - Make the Foottracker's widgets and animate them
-         - Carbon
-         - Water
-         - Electricity
-         - Food
-         - Transportation
-         - Waste & Recyling
       - Make a calendar to the Foottracker's left
       - Daily goals to the right (based on the widgets) (if possible)
    - Contact Page fix the contact use page
