@@ -1,9 +1,10 @@
 footer {
-    background: rgba(0, 0, 0);
+    background: rgba(34, 34, 34, 0.597);
     color: white;
     text-align: left;
     padding: 10px;
     margin: 0;
     font-family: norm;
     font-size: small;
+    width: 100vw;
 }

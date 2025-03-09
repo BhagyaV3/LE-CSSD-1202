@@ -161,12 +161,3 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-footer {
-    background: rgba(0, 0, 0);
-    color: white;
-    text-align: left;
-    padding: 10px;
-    margin: 0;
-    width: 100vw;
-}

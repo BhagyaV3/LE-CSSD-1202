@@ -15,7 +15,7 @@ body {
     padding: 0;
     background-image: url('photos/city-with-green-spaces-iStock-1057157166.jpg');
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(35, 35, 35, 0.5); 
     background-blend-mode: darken;
     overflow: hidden;
 }
@@ -37,7 +37,8 @@ body {
 }
 
 .indexC h1 {
-    /* position: relative; */
+    position: relative;
+    top: -5vh;
     font-size: 3.5vw;
     letter-spacing: 0.4vw;
     /* font-family: norm; */
@@ -53,5 +54,17 @@ body {
     text-align: left;
     color: rgb(0, 199, 27); */
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color: rgb(188, 188, 188);
+}
+
+.indexC label {
+    position: relative;
+    left: 13vw;
+    top: -0.8vh;
+    color: rgb(188, 188, 188);
+}
+
+.indexC .numTwoC {
+    position: relative;
+    left: 20vw;
 }

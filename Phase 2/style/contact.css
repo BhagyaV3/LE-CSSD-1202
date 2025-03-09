@@ -1,73 +1,74 @@
-/* main {
-    flex: 1;
-} */
-
 body {
-    display: flex;
-    /* flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0; */
     overflow: hidden;
     background-color: white;
     background-image: url('photos/cover.png');
     background-size: cover;
 }
 
-.contactUsC {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: norm;
-    min-height: 100vh;
+main {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Ensures the divs align relative to the full viewport height */
+    padding: 0 20px; /* Adds some spacing on the sides */
 }
 
-.contactUsC input {
-    display: auto;
+.contactUsC, .contactC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactUsC {
+    align-items: center;
+    width: 60%;
+}
+
+.contactUsC ul {
+    list-style-type: none;
+}
+
+.contactUsC ul li textarea {
+    width: 30vw;
+    height: 30vh;
+    font-size: large;
+    border: 0.2vw solid rgba(77, 77, 77, 0.599);
+    border-radius: 3vw;
+    outline: none;
+    background: transparent;
+    resize: none;
+    padding: 1.4vw 1.4vw 0 1.4vw;
+}
+
+.contactUsC ul li input {
+    border: 0.2vw solid rgba(77, 77, 77, 0.599);
+    border-radius: 0.8vw;
+    outline: none;
+    background: transparent;
 }
 
 .contactC {
-    position: relative;
-    right: 10vw;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
+    align-items: flex-start;
+    width: 26.5%;
 }
 
-.contactC ul {
+.contactC ul li {
     position: relative;
-    left: 5vw;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contactC li {
-    margin: 5vh;
-    border: 0.3vw solid rgba(255, 255, 255, 0.542);
-    border-radius: 3vw;
+    right: 3vw;
+    list-style-type: none;
     color: white;
+    text-align: center;
+    border: 0.3vw solid white;
+    border-radius: 2vw;
     padding: 1vw;
+    margin: 5vh;
 }
 
 .contactC ul li h3 {
-    font-family: norm;
+    font-family: loger;
+    letter-spacing: 0.2vw;
 }
 
 .contactC ul li p {
     font-family: thine;
-    font-size: 1.1vw;
-    font-weight: bold;
 }
-
-/* footer {
-    background: rgba(0, 0, 0);
-    color: white;
-    text-align: left;
-    padding: 10px;
-    margin: 0;
-} */

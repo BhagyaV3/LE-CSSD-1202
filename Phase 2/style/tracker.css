@@ -10,15 +10,6 @@ body {
     padding: 0;
 }
 
-footer {
-    background: rgba(0, 0, 0);
-    color: white;
-    text-align: left;
-    padding: 10px;
-    margin: 0;
-    overflow: hidden;
-}
-
 .trackerC {
     position: relative;
     right: 0vw;
