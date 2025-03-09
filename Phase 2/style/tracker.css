@@ -36,20 +36,46 @@ footer {
     text-align: center; */
 }
 
-.footC ul {
+.footC {
     list-style-type: none;
     display: flex;
 }
 
-.footC ul img {
+.footC div {
     transition: transform 0.3s ease;
+    position: relative;
 }
 
-.footC ul img:hover {
+.footC div:hover {
     transform: scale(1.2);
 }
 
-/* .indexC p a {
-    color: rgb(0, 255, 42);
-    text-decoration: none;
-} */
+#carbon {
+    top: 20vh;
+    left: 37.5vw;
+}
+
+#electricity {
+    top: 38.75vh;
+    left: 20.5vw;
+}
+
+#transportation {
+    top: 40vh;
+    left: 20vw;
+}
+
+#food {
+    top: 49vh;
+    left: 9.5vw;
+}
+
+#waste {
+    top: 59vh;
+    left: 0.0001vw;
+}
+
+#water {
+    top: 68vh;
+    left: -8.5vw;
+}
