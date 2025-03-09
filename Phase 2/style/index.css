@@ -13,7 +13,7 @@ body {
     /* height: auto; */
     margin: 0;
     padding: 0;
-    background-image: url('photos/city-with-green-spaces-iStock-1057157166.jpg');
+    background-image: url('photos/index_background.jpg');
     background-size: cover;
     background-color: rgba(50, 50, 50, 0.5); 
     background-blend-mode: darken;
@@ -24,7 +24,7 @@ body {
     position: relative;
     left: 7vw;
     top: 30vh;
-    width: 45vw;
+    width: 40vw;
     height: 25vh;
     background: transparent;
     padding: 50px;
@@ -82,6 +82,11 @@ footer {
 .footC {
     list-style-type: none;
     display: flex;
+    position: relative;
+    top: -45vh;
+    left: 30vw;
+    transform: scale(1.25);
+    transform-origin: center;
 }
 
 .footC div {

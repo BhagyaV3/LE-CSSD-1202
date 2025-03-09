@@ -12,7 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    background: url('photos/logBackground.jpg') no-repeat;
+    background: url('photos/login_background.jpg') no-repeat;
     background-size: cover;
 }
 
