@@ -29,9 +29,8 @@ body {
     background: transparent;
     padding: 50px;
     border-radius: 50px;
-    border: 2px solid rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
+    border: 2px dashed rgb(255, 255, 255);
+    box-shadow: 0 0 1vw rgba(255, 255, 255, 0.329);
     font-family: norm;
     text-align: left;
 }
@@ -41,18 +40,10 @@ body {
     top: -5vh;
     font-size: 3.5vw;
     letter-spacing: 0.4vw;
-    /* font-family: norm; */
-    /* text-align: left; */
-    color: rgb(0, 199, 27);
+    color: rgb(0, 245, 33);
 }
 
 .indexC p {
-    /* position: relative;
-    font-size: 3.5vw;
-    letter-spacing: 0.4vw;
-    font-family: norm;
-    text-align: left;
-    color: rgb(0, 199, 27); */
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
