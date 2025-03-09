@@ -25,11 +25,16 @@ body {
     text-align: center; */
 }
 
-.footC img {
+.footC ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footC ul img {
     transition: transform 0.3s ease;
 }
 
-.footC img:hover {
+.footC ul img:hover {
     transform: scale(1.2);
 }
 
