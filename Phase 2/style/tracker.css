@@ -1,50 +1,27 @@
-main {
-    flex: 1;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.trackerC {
-    position: absolute;
-    right: 0vw;
-    top: 0vh;
-    width: 50vw;
-    height: 50vh;
-    background: rgba(0, 75, 145, 0.678);
-    padding: 50px;
-    border-radius: 50px;
-    border: 2px solid rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
-    /* font-family: norm;
-    color: rgb(255, 255, 255);
-    text-align: center; */
-}
-
 .footC {
     list-style-type: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for vertical layout */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center grid in container */
+    align-items: center;
+    padding: 20px;
 }
 
-.footC ul li img {
+.footC div {
     transition: transform 0.3s ease;
-    position: relative;
+    text-align: center;
+    max-width: 150px; /* Optional: Limit size */
 }
 
-.footC ul li img:hover {
+.footC div:hover {
     transform: scale(1.2);
 }
 
-.footC ul li {
-    position: relative;
-    left: 50%;
-    list-style-type: none;
-    margin: -4vw;
+.footC img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Adjust how image fits container */
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin: -1.2vw;
 }
