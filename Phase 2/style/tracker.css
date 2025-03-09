@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
 }
@@ -17,8 +16,6 @@ footer {
     text-align: left;
     padding: 10px;
     margin: 0;
-}
-=======
     overflow: hidden;
 }
 
@@ -56,4 +53,3 @@ footer {
     color: rgb(0, 255, 42);
     text-decoration: none;
 } */
->>>>>>> a5ce59d7dfdb64cc1b7098e4ef6be0b4d7091a94
