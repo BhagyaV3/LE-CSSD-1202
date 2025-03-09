@@ -80,11 +80,10 @@ footer {
 }
 
 .footC {
-    list-style-type: none;
     display: flex;
-    position: relative;
-    top: -45vh;
-    left: 30vw;
+    position: absolute;
+    top: -10vh;
+    left: 25vw;
     transform: scale(1.25);
     transform-origin: center;
 }
