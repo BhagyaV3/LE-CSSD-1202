@@ -33,31 +33,25 @@ body {
 }
 
 #carbon {
-    top: 20vh;
-    left: 27.5vw;
+    transform: translate(50%, 0);
 }
 
 #electricity {
-    top: 38.75vh;
-    left: 34vw;
+    transform: translate(280%, 135%);
 }
 
 #transportation {
-    top: 40vh;
-    left: 40vw;
+    transform: translate(450%, 125%);
 }
 
 #food {
-    top: 49vh;
-    left: 35vw;
+    transform: translate(220%, 230%);
 }
 
 #waste {
-    top: 59vh;
-    left: 34vw;
+    transform: translate(225%, 325%);
 }
 
 #water {
-    top: 68vh;
-    left: 34vw;
+    transform: translate(250%, 455%);
 }
