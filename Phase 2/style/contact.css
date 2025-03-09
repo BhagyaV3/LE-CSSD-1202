@@ -41,10 +41,32 @@ main {
 }
 
 .contactUsC ul li input {
+    margin: 1vw;
+    padding: 0.2vw;
+    color: rgb(71, 71, 71);
+    width: 12vw;
     border: 0.2vw solid rgba(77, 77, 77, 0.599);
     border-radius: 0.8vw;
     outline: none;
     background: transparent;
+    font-family: thine;
+    font-size: 1vw;
+}
+
+.contactUsC ul li label {
+    position: relative;
+    top: 1.5vh;
+    
+    font-family: thine;
+    color: black;
+    text-decoration: underline;
+    padding: 5.2vw;
+}
+
+.contactUsC h2 {
+    position: relative;
+    top: 3vh;
+    font-family: norm;
 }
 
 .contactC {
