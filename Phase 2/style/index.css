@@ -82,8 +82,8 @@ footer {
 .footC {
     display: flex;
     position: absolute;
-    top: -45vh;
-    left: 30vw;
+    top: -10vh;
+    left: 25vw;
     transform: scale(1.25);
     transform-origin: center;
 }
