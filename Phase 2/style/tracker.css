@@ -33,41 +33,18 @@ body {
     display: flex;
 }
 
-.footC div {
+.footC ul li img {
     transition: transform 0.3s ease;
-    position: absolute;
+    position: relative;
 }
 
-.footC div:hover {
+.footC ul li img:hover {
     transform: scale(1.2);
 }
 
-#carbon {
-    top: 6%;
-    left: 30.5%;
-}
-
-#electricity {
-    top: 30.75%;
-    left: 39.5%;
-}
-
-#transportation {
-    top: 32%;
-    left: 46%;
-}
-
-#food {
-    top: 44.2%;
-    left: 40.2%;
-}
-
-#waste {
-    top: 56%;
-    left: 39.5%;
-}
-
-#water {
-    top: 68%;
-    left: 39.5%;
+.footC ul li {
+    position: relative;
+    left: 50%;
+    list-style-type: none;
+    margin: -4vw;
 }
