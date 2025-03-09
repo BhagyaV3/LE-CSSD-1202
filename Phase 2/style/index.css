@@ -84,17 +84,11 @@ footer {
     position: absolute;
     top: -10vh;
     left: 25vw;
-    transform: scale(1.25);
     transform-origin: center;
 }
 
 .footC div {
-    transition: transform 0.3s ease;
     position: relative;
-}
-
-.footC div:hover {
-    transform: scale(1.2);
 }
 
 #carbon {
