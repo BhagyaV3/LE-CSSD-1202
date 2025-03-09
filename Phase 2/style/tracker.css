@@ -25,6 +25,14 @@ body {
     text-align: center; */
 }
 
+.footC img {
+    transition: transform 0.3s ease;
+}
+
+.footC img:hover {
+    transform: scale(1.2);
+}
+
 /* .indexC p a {
     color: rgb(0, 255, 42);
     text-decoration: none;
