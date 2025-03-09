@@ -1,3 +1,33 @@
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.trackerC {
+    position: absolute;
+    right: 0vw;
+    top: 0vh;
+    width: 50vw;
+    height: 50vh;
+    background: rgba(0, 75, 145, 0.678);
+    padding: 50px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
+    /* font-family: norm;
+    color: rgb(255, 255, 255);
+    text-align: center; */
+}
+
 .footC {
     list-style-type: none;
     display: grid;
