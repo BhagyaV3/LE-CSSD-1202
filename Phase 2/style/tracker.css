@@ -30,28 +30,44 @@ body {
 
 .footC {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr; /* Single column for vertical layout */
-    gap: 20px; /* Space between items */
-    justify-content: center; /* Center grid in container */
-    align-items: center;
-    padding: 20px;
+    display: flex;
 }
 
 .footC div {
     transition: transform 0.3s ease;
-    text-align: center;
-    max-width: 150px; /* Optional: Limit size */
+    position: absolute;
 }
 
 .footC div:hover {
     transform: scale(1.2);
 }
 
-.footC img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Adjust how image fits container */
-    border-radius: 10px; /* Optional: Rounded corners */
-    margin: -1.2vw;
+#carbon {
+    top: 6%;
+    left: 30.5%;
+}
+
+#electricity {
+    top: 30.75%;
+    left: 39.5%;
+}
+
+#transportation {
+    top: 32%;
+    left: 46%;
+}
+
+#food {
+    top: 44.2%;
+    left: 40.2%;
+}
+
+#waste {
+    top: 56%;
+    left: 39.5%;
+}
+
+#water {
+    top: 67%;
+    left: 39.5%;
 }
