@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style/navBar.css">
-    <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/navBar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/fonts.css">
 </head>
 <body>
-    <section>
+    <nav>
+        <div class="navBarC">
+            <div class="logoC"><a href="index.html"><img src="style/photos/logo.png"></a></div>
+            <ul class="listC">
+                <li><a href="tracker.html" style="color: white">Tracker</a><div class="spacerC">|</div></li>
+                <li class="dropdownParentC"><a>Resources<img src="style/photos/down_arrow.png" alt="Not Found"></a><div class="spacerC">|</div>
+                    <ul class="dropdownC">
+                        <li><a href="energy_resources.html" style="color: white">Energy and Transportation</a></li>
+                        <li><a href="sustainable_resource.html" style="color: white">Waste Reduction</a></li>
+                    </ul></li>
+                <li><a href="about.html" style="color: white">About</a><div class="spacerC">|</div></li>
+                <li><a href="contact.html" style="color: white">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navLogC"><a href="login.html"><button>Login</button></a></div>
+    </nav>
+    <main>
         <div class="loginC">
             <h1>Login</h1>
             <form>
@@ -31,22 +48,13 @@
             </form><br>
             <div class="registerC"><label>Dont Have An Account Yet? </label><a href="signup.html"><u style="text-decoration:none">Register</u></a></div>
         </div>
-    </section>
-    <nav>
-        <div class="navBarC">
-            <div class="logoC"><a href="index.html"><img src="style/photos/logo.png"></a></div>
-            <ul class="listC">
-                <li><a href="tracker.html" style="color: white">Tracker</a><div class="spacerC">|</div></li>
-                <li class="dropdownParentC"><a>Resources<img src="style/photos/down_arrow.png" alt="Not Found"></a><div class="spacerC">|</div>
-                    <ul class="dropdownC">
-                        <li><a href="energy_resources.html" style="color: white">Energy and Transportation</a></li>
-                        <li><a href="sustainable_resource.html" style="color: white">Waste Reduction</a></li>
-                    </ul></li>
-                <li><a href="about.html" style="color: white">About</a><div class="spacerC">|</div></li>
-                <li><a href="contact.html" style="color: white">Contact</a></li>
+    </main>
+    <footer>
+        <p>
+            <ul>
+                <li>Background image: https://tinyurl.com/k4vjssut</li>
             </ul>
-        </div>
-        <div class="navLogC"><a href="login.html"><button>Login</button></a></div>
-    </nav>
+        </p>
+    </footer>
 </body>
 </html>

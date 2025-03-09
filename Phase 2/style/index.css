@@ -1,55 +1,57 @@
+main {
+    flex: 1;
+}
+
 body {
-    width: 1900px;
-    /* height: 1080px; */
+    /* width: 1900px; */
+    /* justify-content: center;
+    align-items: center; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
-    overflow: hidden;
-    background: url('photos/city-with-green-spaces-iStock-1057157166.jpg') no-repeat;
+    width: 100vw;
+    /* height: auto; */
+    margin: 0;
+    padding: 0;
+    background-image: url('photos/city-with-green-spaces-iStock-1057157166.jpg');
     background-size: cover;
-    max-width: 100%;
-    height: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: darken;
+    overflow: hidden;
 }
 
 .indexC {
     position: relative;
-    right: 0vw;
-    top: 0vh;
-    width: 50vw;
-    height: 50vh;
-    background: rgba(0, 75, 145, 0.678);
+    left: 7vw;
+    top: 30vh;
+    width: 45vw;
+    height: 25vh;
+    background: transparent;
     padding: 50px;
     border-radius: 50px;
     border: 2px solid rgba(255, 255, 255, 0.329);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
     font-family: norm;
+    text-align: left;
+}
+
+.indexC h1 {
+    /* position: relative; */
+    font-size: 3.5vw;
+    letter-spacing: 0.4vw;
+    /* font-family: norm; */
+    /* text-align: left; */
+    color: rgb(0, 199, 27);
+}
+
+.indexC p {
+    /* position: relative;
+    font-size: 3.5vw;
+    letter-spacing: 0.4vw;
+    font-family: norm;
+    text-align: left;
+    color: rgb(0, 199, 27); */
+    font-weight: 600;
     color: rgb(255, 255, 255);
-    text-align: center;
 }
-
-.indexC p a {
-    color: rgb(0, 255, 42);
-    text-decoration: none;
-}
-
-/* .indexC p a {
-    text-decoration: none;
-}
-
-.indexC p a:link {
-    color: rgb(0, 162, 255);
-}
-
-.indexC p a:hover {
-    color: rgb(255, 166, 0);
-}
-
-.indexC p a:active {
-    color: rgb(0, 255, 42);
-}
-
-.indexC p a:visited {
-    color: rgb(0, 143, 24);
-} */

@@ -10,7 +10,7 @@ br {
 
 .navBarC {
     width: 100%;
-    height: 7.8vh;
+    height: 8.25vh;
     background-color: rgba(28, 28, 28, 0.446);
     position: absolute;
     color: rgb(255, 255, 255);
@@ -55,6 +55,7 @@ br {
     width: 3vw;
     height: 7.5vh;
     left: 5vw;
+    top: 0.4vh;
 }
 
 .navBarC .listC a:hover {

@@ -14,7 +14,16 @@
     }
   }
 
+main {
+    flex: 1;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     background: url('photos/signUpImage.jpg') no-repeat;
     background-size: cover;
@@ -121,4 +130,13 @@ body {
 
 .signupC .loginC a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background: rgba(0, 0, 0);
+    color: white;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+    width: 100vw;
 }
