@@ -20,14 +20,14 @@ br {
     text-decoration: none;
 }
 
-.navBarC h1 {
+/* .navBarC h1 {
     position: relative;
     left: 6vw;
     top: -1vh;
     font-size: 1.5vw;
     font-family: titleFont;
     letter-spacing: 0.2vw;
-}
+} */
 
 .navBarC ul {
     list-style-type: none;

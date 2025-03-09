@@ -25,7 +25,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: url('photos/signUpImage.jpg') no-repeat;
+    background: url('photos/signup_background.jpg') no-repeat;
     background-size: cover;
     color: white;
 }

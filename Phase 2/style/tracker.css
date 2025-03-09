@@ -8,34 +8,24 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    background-image: url('photos/tracker_background.jpg');
+    background-size: cover;
+    background-color: rgba(50, 50, 50, 0.5); 
+    background-blend-mode: darken;
     overflow: hidden;
 }
 
-.trackerC {
-    position: relative;
-    right: 0vw;
-    top: 0vh;
-    width: 50vw;
-    height: 50vh;
-    background: rgba(0, 75, 145, 0.678);
-    padding: 50px;
-    border-radius: 50px;
-    border: 2px solid rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
-    /* font-family: norm;
-    color: rgb(255, 255, 255);
-    text-align: center; */
-}
-
 .footC {
-    list-style-type: none;
     display: flex;
+    transform: scale(1.25);
+    transform-origin: center;
+    position: absolute;
+    top: -10vh;
 }
 
 .footC div {
     transition: transform 0.3s ease;
-    position: relative;
+    position: absolute;
 }
 
 .footC div:hover {
@@ -44,30 +34,30 @@ body {
 
 #carbon {
     top: 20vh;
-    left: 37.5vw;
+    left: 27.5vw;
 }
 
 #electricity {
     top: 38.75vh;
-    left: 20.5vw;
+    left: 34vw;
 }
 
 #transportation {
     top: 40vh;
-    left: 20vw;
+    left: 40vw;
 }
 
 #food {
     top: 49vh;
-    left: 9.5vw;
+    left: 35vw;
 }
 
 #waste {
     top: 59vh;
-    left: 0.0001vw;
+    left: 34vw;
 }
 
 #water {
     top: 68vh;
-    left: -8.5vw;
+    left: 34vw;
 }
