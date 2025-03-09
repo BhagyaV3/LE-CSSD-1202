@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
 }
@@ -17,3 +18,42 @@ footer {
     padding: 10px;
     margin: 0;
 }
+=======
+    overflow: hidden;
+}
+
+.trackerC {
+    position: relative;
+    right: 0vw;
+    top: 0vh;
+    width: 50vw;
+    height: 50vh;
+    background: rgba(0, 75, 145, 0.678);
+    padding: 50px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
+    /* font-family: norm;
+    color: rgb(255, 255, 255);
+    text-align: center; */
+}
+
+.footC ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footC ul img {
+    transition: transform 0.3s ease;
+}
+
+.footC ul img:hover {
+    transform: scale(1.2);
+}
+
+/* .indexC p a {
+    color: rgb(0, 255, 42);
+    text-decoration: none;
+} */
+>>>>>>> a5ce59d7dfdb64cc1b7098e4ef6be0b4d7091a94

@@ -15,15 +15,16 @@ body {
 }
 
 .contactUsC {
-    display: block;
-    align-items: center;
-    text-align: center;
-    border: 0.2vw solid black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: norm;
+    min-height: 100vh;
+    display: flex;
 }
 
-.contactUsC ul {
-    display: inline-block;
-    list-style: none;
+.contactUsC input {
+    display: auto;
 }
 
 .contactC {
