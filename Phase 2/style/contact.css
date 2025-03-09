@@ -9,8 +9,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Ensures the divs align relative to the full viewport height */
-    padding: 0 20px; /* Adds some spacing on the sides */
+    height: 100vh;
+    padding: 0 20px;
 }
 
 .contactUsC, .contactC {

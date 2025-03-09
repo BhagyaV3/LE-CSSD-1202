@@ -1,5 +1,9 @@
 main {
-    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
 }
 
 body {
@@ -9,8 +13,34 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background: url('photos/aboutcover.png');
+    background-size: cover;
 }
 
-/* .aboutC h1 {
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-} */
+    width: 145%;
+    font-family: norm;
+    color: rgb(64, 64, 64);
+    font-size: 3vw;
+    letter-spacing: 0.2vw;
+}
+
+.aboutC div {
+    color: white;
+}
+
+.aboutC div h3 {
+    font-family: loger;
+    letter-spacing: 0.1vw;
+}
+
+.aboutC div p {
+    border: 0.2vw dotted white;
+    border-radius: 0.4vw;
+    font-family: thine;
+}
