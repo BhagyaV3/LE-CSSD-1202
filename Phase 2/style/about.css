@@ -1,5 +1,6 @@
 main {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
@@ -13,9 +14,12 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background: url('photos');
+    background-image: url('photos/about_background.jpg');
+    color: rgb(255, 255, 255);
     background-size: cover;
+    background-color: rgba(8, 8, 8, 0.5); 
+    background-blend-mode: darken;
+    overflow: hidden;
 }
 
 h1 {
@@ -25,13 +29,8 @@ h1 {
     align-items: center;
     width: 145%;
     font-family: norm;
-    color: rgb(64, 64, 64);
     font-size: 3vw;
     letter-spacing: 0.2vw;
-}
-
-.aboutC div {
-    color: black;
 }
 
 .aboutC div h3 {
@@ -40,7 +39,8 @@ h1 {
 }
 
 .aboutC div p {
-    border: 0.2vw dotted black;
+    border: 0.2vw dotted rgb(255, 255, 255);
     border-radius: 0.4vw;
     font-family: thine;
+    padding: 5px;
 }
