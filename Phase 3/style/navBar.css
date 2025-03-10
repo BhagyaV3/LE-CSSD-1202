@@ -1,0 +1,198 @@
+html body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+br {
+    user-select: none;
+}
+
+.navBarC {
+    width: 100%;
+    height: 8.25vh;
+    background-color: rgba(28, 28, 28, 0.446);
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    display: flex;
+    text-decoration: none;
+}
+
+.navBarC ul {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    left: 40vw;
+    top: 1.2vh;
+    font-size: 0.8vw;
+    letter-spacing: 0.1vw;
+    font-family: thine;
+}
+
+.navBarC a {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    right: 5vw;
+    line-height: 2.5vh;
+    width: 6vw;
+    z-index: 10;
+}
+
+.navBarC .logoC img {
+    position: relative;
+    width: 3vw;
+    height: 7.5vh;
+    left: 5vw;
+    top: 0.4vh;
+}
+
+.navBarC .listC a:hover {
+    background-color: rgba(172, 172, 172, 0.446);
+}
+
+.navLogC button:hover {
+    background-color: rgba(172, 172, 172, 0.446);
+}
+
+.navLogC button {
+    position: absolute;
+    right: 1vw;
+    top: 2.1vh;
+    width: 8.5vw;
+    height: 4vh;
+    background: rgba(87, 87, 87, 0.446);
+    outline: none;
+    color: white;
+    border: 0.1vw solid rgba(119, 119, 119, 0.446);
+    border-radius: 155px;
+    font-size: 0.8vw;
+    font-family: thine;
+    cursor: pointer;
+    letter-spacing: 0.1vw;
+}
+
+.navBarC .listC .dropdownC {
+    position: absolute;
+    top: 5.2vh;
+    left: 3.1vw;
+    display: block;
+    width: 3.95vw;
+    height: 9.37vh;
+    display: none;
+    background-color: rgba(28, 28, 28, 0.446);
+}
+
+.navBarC .listC .dropdownC a {
+    position: relative;
+    text-align: center;
+    top: -2.7vh;
+    right: 2.05vw;
+    line-height: 3vh;
+}
+
+.navBarC .listC li.dropdownParentC a {
+    position: relative;
+    text-align: left;
+    font-size: 0.8vw;
+    text-indent: 0.4vw;
+}
+
+.navBarC .listC li.dropdownParentC .dropdownC a {
+    text-align: center;
+    font-size: 0.6vw;
+}
+
+.navBarC .listC .dropdownC a:hover {
+    background-color: rgba(172, 172, 172, 0.446);
+}
+
+.navBarC .listC .dropdownParentC:hover .dropdownC {
+    display: block;
+}
+
+.navBarC .listC .dropdownParentC img {
+    width: 0.6vw;
+    height: 1vh;
+}
+
+.navBarC .listC .spacerC {
+    position: absolute;
+    user-select: none;
+    transform: translate(0.92vw, -2.3vh);
+    z-index: 1;
+}
+
+@media (max-width: 450px) {
+    .navBarC .logoC img {
+        left: 7vw;
+        width: 14vw;
+        height: 7.5vh;
+    }
+
+    .navBarC ul {
+        font-size: 2.8vw;
+    }
+
+    .navBarC .listC .dropdownC {
+        left: 1vw;
+        width: 1vw;
+    }
+
+    .navBarC .listC .dropdownC a {
+        right: 10vw;
+    }
+
+    .navBarC .listC .dropdownParentC img {
+        width: 0.6vw;
+        height: 1vh;
+    }
+
+    .navBarC .listC li.dropdownParentC .dropdownC a {
+        font-size: 0.6vw;
+    }
+
+    .navBarC .listC li {
+        width: 10vw;
+    }
+
+    .navBarC .listC .spacerC {
+        transform: translate(3.92vw, -2.3vh);
+    }
+}
+
+@media (max-width: 1200px) {
+    .navBarC .logoC img {
+        left: 7vw;
+        width: 8vw;
+        height: 7.5vh;
+    }
+
+    .navBarC ul {
+        font-size: 2.8vw;
+    }
+
+    .navBarC .listC .dropdownC {
+        left: 10vw;
+        width: 1vw;
+    }
+
+    .navBarC .listC .dropdownParentC img {
+        width: 0.6vw;
+        height: 1vh;
+    }
+
+    .navBarC .listC li.dropdownParentC .dropdownC a {
+        font-size: 0.6vw;
+    }
+
+    .navBarC .listC li {
+        width: 10vw;
+    }
+    
+    .navBarC .listC .spacerC {
+        transform: translate(4.4vw, -2.7vh);
+    }
+}

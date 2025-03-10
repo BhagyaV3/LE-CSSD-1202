@@ -1,0 +1,220 @@
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: url('photos/index_background.jpg');
+    background-size: cover;
+    background-color: rgba(50, 50, 50, 0.5); 
+    background-blend-mode: darken;
+    overflow: hidden;
+}
+
+.indexC {
+    position: relative;
+    left: 7vw;
+    top: 30vh;
+    width: 40vw;
+    height: 25vh;
+    background: transparent;
+    padding: 50px;
+    border-radius: 50px;
+    border: 2px dashed rgb(255, 255, 255);
+    box-shadow: 0 0 1vw rgba(255, 255, 255, 0.329);
+    font-family: norm;
+    text-align: left;
+}
+
+.indexC h1 {
+    position: relative;
+    top: -5vh;
+    font-size: 3.5vw;
+    letter-spacing: 0.4vw;
+    color: rgb(0, 245, 33);
+}
+
+.indexC p {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.indexC label {
+    position: relative;
+    left: 13vw;
+    top: -0.8vh;
+    color: rgb(188, 188, 188);
+}
+
+.indexC .numTwoC {
+    position: relative;
+    left: 20vw;
+}
+
+.footC {
+    display: flex;
+}
+
+.footC div {
+    transition: transform 0.3s ease;
+    position: absolute;
+}
+
+.footC div:hover {
+    transform: scale(1.2);
+}
+
+#carbon {
+    top: 15%;
+    left: 62.5%;
+}
+
+#electricity {
+    top: 34%;
+    left: 68.5%;
+}
+
+#transportation {
+    top: 35%;
+    left: 75%;
+}
+
+#food {
+    top: 44.2%;
+    left: 69.75%;
+}
+
+#waste {
+    top: 54%;
+    left: 68.75%;
+}
+
+#water {
+    top: 63%;
+    left: 68.5%;
+}
+
+@media (max-width: 500px) {
+    .indexC {
+        left: 18vw;
+        top: 25vh;
+    }  
+
+    #carbon {
+        opacity: 0;
+    }
+    
+    #electricity {
+        opacity: 0;
+    }
+    
+    #transportation {
+        opacity: 0;
+    }
+    
+    #food {
+        opacity: 0;
+    }
+    
+    #waste {
+        opacity: 0;
+    }
+    
+    #water {
+        opacity: 0;
+    }
+
+    .indexC h1 {
+        position: relative;
+        top: -4.5vh;
+        font-size: 3.85vw;
+    }
+
+    .indexC p {
+        font-size: 3.1vw;
+        position: relative;
+        right: 10vw;
+    }
+
+    .indexC .numTwoC {
+        top: 0px;
+    }
+
+    .indexC label {
+        opacity: 0;
+    }
+    
+    .indexC .numTwoC {
+        font-size: 3.2vw;
+        left: 12vw;
+        top: 0vh;
+    }
+}
+
+@media (max-width: 1100px) {
+    .indexC {
+        left: 18vw;
+        top: 25vh;
+    }  
+
+    #carbon {
+        top: 15%;
+        left: 62.5%;
+    }
+    
+    #electricity {
+        top: 28.5%;
+        left: 75.5%;
+    }
+    
+    #transportation {
+        top: 29.5%;
+        left: 86%;
+    }
+    
+    #food {
+        top: 36.2%;
+        left: 76.75%;
+    }
+    
+    #waste {
+        top: 43.5%;
+        left: 74.75%;
+    }
+    
+    #water {
+        top: 49%;
+        left: 74.5%;
+    }
+
+    .indexC h1 {
+        position: relative;
+        top: -4.5vh;
+        font-size: 3.85vw;
+    }
+
+    .indexC p {
+        font-size: 3.1vw;
+        position: relative;
+        right: 4vw;
+    }
+
+    .indexC .numTwoC {
+        top: 0px;
+    }
+
+    .indexC label {
+        opacity: 0;
+    }
+    
+    .indexC .numTwoC {
+        font-size: 3.2vw;
+        left: 6vw;
+        top: 0vh;
+    }
+}

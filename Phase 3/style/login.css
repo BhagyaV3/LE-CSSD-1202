@@ -1,0 +1,228 @@
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: url('photos/login_background.jpg') no-repeat;
+    background-size: cover;
+}
+
+.loginC {
+    position: absolute;
+    right: 34.75vw;
+    top: 23vh;
+    width: 25vw;
+    height: 54.5vh;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    padding: 0.5vw 5vh;
+    border-radius: 3.5vh;
+    border: 0.2vw solid rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(0.2vw);
+    box-shadow: 0 0 10vw rgba(255, 255, 255, 0.329);
+}
+
+.loginC .forgotC a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    left: 14.5vw;
+    top: -4.5vh;
+    font-family: norm;
+}
+
+.loginC .forgotC a:hover {
+    text-decoration: underline;
+}
+
+.loginC .epC input {
+    width: 21vw;
+    height: 5.3vh;
+    background: transparent;
+    outline: none;
+    color: white;
+    border: 0.15vw solid rgba(255, 255, 255, 0.344);
+    border-radius: 4vw;
+    padding: 0px 2.4vw 0px 10px;
+}
+
+.loginC .epC input::placeholder {
+    font-family: norm;
+}
+
+.loginC input::placeholder {
+    color: white;
+}
+
+.loginC h1 {
+    position: relative;
+    top: -2vh;
+    font-size: 3.5vw;
+    letter-spacing: 0.4vw;
+    font-family: norm;
+    text-align: center;
+    color: rgb(236, 236, 236);
+}
+
+.loginC .inputC {
+    position: relative;
+    top: -2.5vh;
+    width: 10vw;
+    height: 6.4vh;
+    margin: 0.7vw 0;
+}
+
+.loginC .showC label {
+    position: relative;
+    top: -2vh;
+    cursor: pointer;
+    font-family: norm;
+    user-select: none;
+}
+
+.loginC img {
+    position: relative;
+    left: 22vw;
+    top: -5.2vh;
+}
+
+.loginC .submitC button {
+    position: relative;
+    left: 0.3vw;
+    top: -1vh;
+    width: 24vw;
+    height: 6vh;
+    background-color: rgba(146, 146, 146, 0.318);
+    outline: none;
+    border: 1.5vw solid rgba(255, 255, 255, 0.329);
+    color: rgb(193, 193, 193);
+    border-radius: 10vw;
+    border: none;
+    font-size: 1.4vw;
+}
+
+.loginC .submitC button:hover {
+    cursor: pointer;
+    background-color: rgba(187, 187, 187, 0.446);
+    color: white;
+}
+
+.loginC .registerC a {
+    color: white;
+    font-family: norm;
+}
+
+.loginC .registerC a:hover {
+    text-decoration: underline;
+}
+
+.loginC .registerC {
+    text-align: center;
+    position: relative;
+    top: -1vh;
+    font-family: norm;
+}
+
+.loginC .showC input {
+    display: none;
+}
+
+.loginC .showC .checkC {
+    position: relative;
+    width: 1vw;
+    height: 2vh;
+    left: 0.2vw;
+    top: 0.4vh;
+    border: 0.15vw solid rgba(255, 255, 255, 0.344);;
+    border-radius: 0.4vw;
+    display: inline-block;
+    margin-right: 0.8vw;
+    cursor: pointer;
+}
+
+.loginC .showC input[type="checkbox"]:checked + .checkC::after {
+    content: "";
+    position: absolute;
+    width: 1vw;
+    height: 2vh;
+    background-color: #4f73f7;
+    border-radius: 0.2vw;
+    background-image: url('photos/checkmark.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 450px) {
+    .loginC h1 {
+        font-size: large;
+    }
+
+    .loginC {
+        left: 20vw;
+        top: 23vh;
+        width: 45vw;
+        height: 45vh;
+    }
+
+    .loginC .epC input {
+        position: relative;
+        right: 4vh;
+        width: 55vw;
+    }   
+    
+    .loginC .submitC button {
+        position: relative;
+        left: 10vw;
+        font-size: large;
+    }
+
+    .loginC .showC label {
+        position: relative;
+        right: 5vw;
+        font-size: xx-small;
+    }
+
+    .loginC .forgotC a {
+        position: relative;
+        left: 30vw;
+        font-size: xx-small;
+    }
+}
+
+@media (max-width: 1100px) {
+    .loginC {
+        left: 20vw;
+        top: 23vh;
+        width: 45vw;
+        height: 40vh;
+    }
+
+    .loginC img {
+        position: relative;
+        left: 42vw;
+    }
+
+    .loginC .submitC button {
+        font-size: large;
+    }
+
+    .loginC .submitC {
+        position: relative;
+        left: 10vw;
+    }
+
+    .loginC .forgotC a {
+        position: relative;
+        left: 30vw;
+    }
+}

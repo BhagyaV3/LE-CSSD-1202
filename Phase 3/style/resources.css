@@ -1,0 +1,98 @@
+
+
+body {
+    background-color: rgb(186, 168, 145);
+}
+
+h1 {
+    text-align: center;
+    font-family: loger;
+    letter-spacing: 0.2vw;
+}
+
+.startC {
+    text-align: center;
+    font-family: norm;
+    letter-spacing: 0.02vw;
+    font-size: 0.9vw;
+}
+
+h4 {
+    font-family: norm;
+    font-size: 1.2vw;
+}
+
+p {
+    font-family: thine;
+    font-size: 1vw;
+}
+
+h5 {
+    font-family: norm;
+    font-size: 1vw;
+    text-decoration: underline;
+}
+
+a {
+    font-family: thine;
+}
+
+article .linkC a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        position: relative;
+        top: 1vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    img {
+        width: 250px;
+        height: 100px;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    .startC {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    h1 {
+        position: relative;
+        top: 1vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    img {
+        width: 550px;
+        height: 244px;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    .startC {
+        font-size: 2vw;
+    }
+}

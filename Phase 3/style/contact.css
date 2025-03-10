@@ -1,0 +1,192 @@
+body {
+    overflow: hidden;
+    background-color: white;
+    background-image: url('photos/contact_background.png');
+    background-size: cover;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.contactUsC, .contactC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactUsC {
+    position: relative;
+    top: -7vh;
+    align-items: center;
+    width: 145%;
+}
+
+.contactUsC ul {
+    list-style-type: none;
+}
+
+.contactUsC ul li textarea {
+    position: relative;
+    right: 1.1vw;
+    top: 3vh;
+    width: 30vw;
+    height: 30vh;
+    color: black;
+    font-size: large;
+    border: 0.2vw solid rgba(77, 77, 77, 0.599);
+    border-radius: 3vw;
+    box-shadow: 0 0 0.8vw rgb(135, 135, 135);
+    outline: none;
+    background: transparent;
+    resize: none;
+    padding: 1.4vw 1.4vw 0 1.4vw;
+}
+
+.contactUsC ul li input {
+    margin: 1vw;
+    padding: 0.45vw;
+    color: rgb(0, 0, 0);
+    width: 12vw;
+    border: 0.2vw solid rgba(77, 77, 77, 0.599);
+    border-radius: 0.8vw;
+    box-shadow: 0 0 0.8vw rgb(135, 135, 135);
+    outline: none;
+    background: transparent;
+    font-family: thine;
+    font-size: 1vw;
+}
+
+.contactUsC ul li label {
+    position: relative;
+    top: 1.5vh;
+    font-family: thine;
+    font-size: large;
+    color: black;
+}
+
+.contactUsC h2 {
+    position: relative;
+    top: 3vh;
+    font-family: norm;
+    color: rgba(0, 0, 0, 0.599);
+}
+
+.contactUsC button {
+    position: relative;
+    top: 4vh;
+    width: 10vw;
+    height: 5vh;
+    color: rgba(0, 0, 0, 0.599);
+    background: transparent;
+    border: 0.2vw solid rgba(77, 77, 77, 0.599);
+    border-radius: 2.5vw;
+    font-family: thine;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+
+.contactC {
+    position: relative;
+    top: -10vh;
+    align-items: flex-start;
+    width: 26.5%;
+}
+
+.contactC h1 {
+    position: relative;
+    right: 0.5vw;
+    top: 13vh;
+    padding: 1vw;
+    margin: 5vh;
+    color: white;
+}
+
+.contactC ul li {
+    position: relative;
+    right: 3vw;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    border: 0.3vw solid white;
+    box-shadow: 0 0 0.8vw rgb(255, 255, 255);
+    border-radius: 2vw;
+    padding: 1vw;
+    margin: 5vh;
+}
+
+.contactC ul li h3 {
+    font-family: loger;
+    letter-spacing: 0.2vw;
+}
+
+.contactC ul li p {
+    font-family: thine;
+}
+
+@media (max-width: 500px) {
+    .contactUsC {
+        opacity: 0;
+    }
+
+    .contactC {
+        left: -60vw;
+    }
+
+    .contactC h1 {
+        font-size: 5vw;
+        left: 18vw;
+        top: 15vh;
+    }
+
+    .contactC ul li {
+        font-size: 5vw;
+        position: relative;
+        top: 2vh;
+    }
+}
+
+@media (max-width: 1100px) {
+    .contactUsC {
+        right: 10vw;
+    }
+
+    .contactUsC button {
+        position: relative;
+        left: 5vw;
+        font-size: 2vw;
+        width: 20vw;
+    }
+
+    .contactUsC ul li input {
+        position: relative;
+        left: 6vw;
+        top: 1vh;
+    }
+    .contactUsC ul li textarea {
+        left: 5vw;
+    }
+
+    .contactC {
+        position: relative;
+        right: 30vw;
+    }
+
+    .contactC h1 {
+        font-size: 5vw;
+        left: 18vw;
+        top: 15vh;
+    }
+
+    .contactC ul li {
+        font-size: 3vw;
+        position: relative;
+        left: 6vw;
+        top: 5vh;
+    }
+}

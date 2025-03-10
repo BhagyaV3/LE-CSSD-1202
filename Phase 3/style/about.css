@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: url('photos/about_background.jpg');
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-color: rgba(56, 56, 56, 0.5); 
+    background-blend-mode: darken;
+    overflow: hidden;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 145%;
+    font-family: norm;
+    font-size: 3vw;
+    letter-spacing: 0.2vw;
+}
+
+.aboutC div h3 {
+    font-family: loger;
+    letter-spacing: 0.1vw;
+}
+
+.aboutC div p {
+    border: 0.2vw dotted rgb(255, 255, 255);
+    border-radius: 0.4vw;
+    font-family: thine;
+    padding: 5px;
+}
+
+@media (max-width: 450px) {
+    .aboutC div p {
+        font-size: xx-small;
+    }
+}
+
+@media (max-width: 1100px) {
+    body {
+        background-color: rgba(14, 14, 14, 0.5); 
+    }
+}

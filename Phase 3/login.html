@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/navBar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/fonts.css">
+</head>
+<body>
+    <nav>
+        <div class="navBarC">
+            <div class="logoC"><a href="index.html"><img src="style/photos/logo.png" alt="logo"></a></div>
+            <ul class="listC">
+                <li><a href="tracker.html" style="color: white">Tracker</a><div class="spacerC">|</div></li>
+                <li class="dropdownParentC"><a>Resources<img src="style/photos/icons/down_arrow.png" alt="Not Found"></a><div class="spacerC">|</div>
+                    <ul class="dropdownC">
+                        <li><a href="energy_resources.html" style="color: white">Energy and Transportation</a></li>
+                        <li><a href="sustainable_resource.html" style="color: white">Waste Reduction</a></li>
+                    </ul></li>
+                <li><a href="about.html" style="color: white">About</a><div class="spacerC">|</div></li>
+                <li><a href="contact.html" style="color: white">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navLogC"><a href="signup.html"><button>Signup</button></a></div>
+    </nav>
+    <main>
+        <div class="loginC">
+            <h1>Login</h1>
+            <form>
+                <div class="epC">
+                    <div class="inputC"> <input type="email" placeholder="Email" id="emailInput" maxlength="40" required> 
+                        <img src="style/photos/icons/user.png" width="20" height="20" style="transform: translate(0px,7px)" alt="Not Found">
+                    </div>
+                    <div class="inputC"> <input type="password" placeholder="Password" id="passwordInput" minlength="6" maxlength="25" required>
+                        <img src="style/photos/icons/lock.png" width="20" height="20" style="transform: translate(0px,7px)" alt="Not Found">
+                    </div>
+                </div>
+                <div class="showC"> 
+                    <label><input type="checkbox" id="showPassBox"><span class="checkC"></span>Show Password</label>
+                </div> 
+                <div class="forgotC"> 
+                    <a href=#>Forgot Password?</a>
+                </div>
+                <div class="submitC"><button type="submit">Login</button></div>
+            </form><br>
+            <div class="registerC"><label>Dont Have An Account Yet? </label><a href="signup.html"><u style="text-decoration:none">Register</u></a></div>
+        </div>
+    </main>
+    <footer>
+        <p>Image credits:</p>
+        <ul>
+            <li>Background image: https://tinyurl.com/k4vjssut</li>
+        </ul>
+    </footer>
+</body>
+    <script src="scripts/login.js"></script>
+</html>

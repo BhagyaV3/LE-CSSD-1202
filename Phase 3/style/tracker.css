@@ -1,0 +1,111 @@
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('photos/tracker_background.jpg');
+    background-size: cover;
+    background-color: rgba(50, 50, 50, 0.5); 
+    background-blend-mode: darken;
+    overflow: hidden;
+}
+
+.trackerC {
+    position: absolute;
+    right: 0vw;
+    top: 0vh;
+    width: 50vw;
+    height: 50vh;
+    background: rgba(0, 75, 145, 0.678);
+    padding: 50px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
+}
+
+.footC {
+    display: flex;
+}
+
+.footC div {
+    transition: transform 0.3s ease;
+    position: absolute;
+}
+
+.footC div:hover {
+    transform: scale(1.2);
+}
+
+#carbon {
+    top: 6%;
+    left: 30.5%;
+}
+
+#electricity {
+    top: 30.75%;
+    left: 39.5%;
+}
+
+#transportation {
+    top: 32%;
+    left: 46%;
+}
+
+#food {
+    top: 44.2%;
+    left: 40.2%;
+}
+
+#waste {
+    top: 56%;
+    left: 39.5%;
+}
+
+#water {
+    top: 67%;
+    left: 39.5%;
+}
+
+.calenderC {
+    position: relative;
+    left: 2vw;
+    top: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30vw;
+    background-color: white;
+    border: 1vw solid white;
+    border-radius: 1.5vw;
+}
+
+.calenderC .iconC img {
+    position: relative;
+    top: -0.2vh;
+}
+
+.calenderC .currentDateC {
+    color: black;
+    text-align: center;
+}
+
+.calenderC .calenderBodyC ul {
+    display: flex;
+    list-style-type: none;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.calenderC .calenderBodyC .dayNameC li {
+    margin: 0 0.8vw;
+}
+
+.calenderC .calenderBodyC .dayC li {
+    margin: 0 1.1vw;
+}
