@@ -60,6 +60,11 @@ body {
     font-family: longer;
 }
 
+.signupC .infoC img {
+    position: absolute;
+    transform: translate(-2.5vw, 0.6vh);
+}
+
 .signupC .infoC input {
     width: 21vw;
     height: 5vh;
