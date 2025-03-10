@@ -1,7 +1,4 @@
-  - Resources
-     - If necessary, do research to sort the widgets and everything else accordingly Shlok
-   - rename files
-   - Make custom error messages
+We did partialy of media query
 
 
 
