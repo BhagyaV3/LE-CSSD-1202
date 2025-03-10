@@ -109,7 +109,6 @@ body {
 }
 
 .signupC .nextC a:focus {
-    
     animation: nextPhase;
     animation-duration: 2s;
 }
@@ -134,3 +133,42 @@ body {
 .signupC .loginC a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 450px) {
+    .signupC {
+        left: 15vw;
+        top: 17.5vh;
+        width: 45vw;
+        height: 60vh;
+    }
+
+    .signupC .infoC input {
+        position: relative;
+        right: 5vw;
+        width: 45vw;
+    }
+
+    .signupC .nextC {
+        position: relative;
+        left: 1vw;
+        top: -2.3vh;
+    }
+
+    .signupC .infoC input::placeholder {
+        font-size: xx-small;
+    }
+
+    .signupC .loginC {
+        right: 5vw;
+        font-size: 75%;
+    }
+}
+
+/* @media (max-width: 1100px) {
+    .loginC {
+        left: 20vw;
+        top: 23vh;
+        width: 45vw;
+        height: 40vh;
+    }
+} */

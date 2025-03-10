@@ -161,3 +161,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@media (max-width: 450px) {
+    .loginC {
+        left: 20vw;
+        top: 23vh;
+        width: 45vw;
+        height: 45vh;
+    }
+}
+
+@media (max-width: 1100px) {
+    .loginC {
+        left: 20vw;
+        top: 23vh;
+        width: 45vw;
+        height: 40vh;
+    }
+}
