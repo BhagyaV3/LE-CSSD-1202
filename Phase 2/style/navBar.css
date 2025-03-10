@@ -20,15 +20,6 @@ br {
     text-decoration: none;
 }
 
-/* .navBarC h1 {
-    position: relative;
-    left: 6vw;
-    top: -1vh;
-    font-size: 1.5vw;
-    font-family: titleFont;
-    letter-spacing: 0.2vw;
-} */
-
 .navBarC ul {
     list-style-type: none;
     display: flex;
@@ -132,4 +123,16 @@ br {
     user-select: none;
     transform: translate(0.92vw, -2.3vh);
     z-index: 1;
+}
+
+@media (max-width: 450px) {
+    .navBarC .logoC img {
+        left: 7vw;
+        width: 12vw;
+        height: 7.5vh;
+    }
+}
+
+@media (max-width: 1100px) {
+    
 }

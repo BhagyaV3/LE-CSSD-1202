@@ -43,6 +43,46 @@ section .linkC a:hover {
 
 @media (max-width: 450px) {
     p {
-        font-size: 5vw;
+        font-size: 3vw;
+    }
+
+    img {
+        width: 300px;
+        height: 133px;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    .startC {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    p {
+        font-size: 2vw;
+    }
+
+    img {
+        width: 550px;
+        height: 244px;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    .startC {
+        font-size: 2vw;
     }
 }
