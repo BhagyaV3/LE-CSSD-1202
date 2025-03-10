@@ -1,6 +1,6 @@
 We did partialy of media query
 
-
+for contact page in iphone mode the send message was deleted becuase all of it would not fit on the screen.
 
 
 
