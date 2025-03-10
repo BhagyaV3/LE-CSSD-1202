@@ -126,7 +126,7 @@ main {
 }
 
 footer {
-    position: absolute;
-    top: 90.25vh;
-    top: 91.75vh;
-}
+    position: fixed;  /* Fix the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+  }
