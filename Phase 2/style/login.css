@@ -163,6 +163,10 @@ body {
 }
 
 @media (max-width: 450px) {
+    .loginC h1 {
+        font-size: large;
+    }
+
     .loginC {
         left: 20vw;
         top: 23vh;
@@ -174,7 +178,25 @@ body {
         position: relative;
         right: 4vh;
         width: 55vw;
-    }    
+    }   
+    
+    .loginC .submitC button {
+        position: relative;
+        left: 10vw;
+        font-size: large;
+    }
+
+    .loginC .showC label {
+        position: relative;
+        right: 5vw;
+        font-size: xx-small;
+    }
+
+    .loginC .forgotC a {
+        position: relative;
+        left: 30vw;
+        font-size: xx-small;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -183,5 +205,24 @@ body {
         top: 23vh;
         width: 45vw;
         height: 40vh;
+    }
+
+    .loginC img {
+        position: relative;
+        left: 42vw;
+    }
+
+    .loginC .submitC button {
+        font-size: large;
+    }
+
+    .loginC .submitC {
+        position: relative;
+        left: 10vw;
+    }
+
+    .loginC .forgotC a {
+        position: relative;
+        left: 30vw;
     }
 }
