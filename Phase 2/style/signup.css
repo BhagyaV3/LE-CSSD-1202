@@ -164,11 +164,28 @@ body {
     }
 }
 
-/* @media (max-width: 1100px) {
-    .loginC {
-        left: 20vw;
-        top: 23vh;
+@media (max-width: 1100px) {
+    .signupC {
+        left: 22.5vw;
+        top: 25vh;
         width: 45vw;
-        height: 40vh;
+        height: 45vh;
     }
-} */
+
+    .signupC .infoC input {
+        position: relative;
+        right: 2.5vw;
+        width: 45vw;
+    }
+
+    .signupC .nextC {
+        position: relative;
+        left: 1vw;
+        top: -2.3vh;
+    }
+
+    .signupC .loginC {
+        right: 0.5vw;
+        font-size: 125%;
+    }
+}
