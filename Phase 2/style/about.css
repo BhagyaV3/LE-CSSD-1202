@@ -44,3 +44,32 @@ h1 {
     font-family: thine;
     padding: 5px;
 }
+
+@media (max-width: 450px) {
+    .aboutC div p {
+        font-size: xx-small;
+    }
+}
+
+/* @media (max-width: 1100px) {
+    p {
+        font-size: 2vw;
+    }
+
+    img {
+        width: 550px;
+        height: 244px;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    .startC {
+        font-size: 2vw;
+    }
+} */
