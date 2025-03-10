@@ -14,9 +14,18 @@
     }
   }
 
+main {
+    flex: 1;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    background: url('photos/signUpImage.jpg') no-repeat;
+    background: url('photos/signup_background.jpg') no-repeat;
     background-size: cover;
     color: white;
 }
@@ -30,7 +39,7 @@ body {
     padding: 10px 40px;
     border-radius: 3vh;
     border: 3px solid rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.329);
     font-family: norm;
 }

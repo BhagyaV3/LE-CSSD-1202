@@ -6,44 +6,10 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style/contact.css">
     <link rel="stylesheet" href="style/navBar.css">
+    <!-- <link rel="stylesheet" href="style/footer.css"> -->
     <link rel="stylesheet" href="style/fonts.css">
 </head>
 <body>
-    <div class="contactUsC">
-        <div>Get In Touch</div>
-        <ul>
-            <li><input type="text" placeholder="First Name"></li>
-            <li><input type="text" placeholder="Last Name"></li>
-            <li><input type="text" placeholder="Email Address"></li>
-            <li><input type="text" placeholder="Phone Number"></li>
-            <li><input type="text" placeholder="Write You're Message Here"></li>
-        </ul>
-
-        <input type="button">
-    </div>
-    <div class="contactC">
-        <ul>
-            <li>
-                <h3>Bhagya Vithanage</h3>
-                <p>
-                    Email: <a href="mailto:bhagyav@my.yorku.ca" style="color: white;">bhagyav@my.yorku.ca</a><br>
-                    Phone: 647-764-6222
-                </p>
-            </li> <li>
-                <h3>Shlok Desai</h3>
-                <p>
-                    Email: <a href="mailto:shlok64@my.yorku.ca" style="color: white;">shlok64@my.yorku.ca</a><br>
-                    Phone: 519-328-4831
-                </p>
-            </li> <li>
-                <h3>Atheen Pahavathas</h3>
-                <p>
-                    Email: <a href="mailto:atheen74@my.yorku.ca" style="color: white;">atheen74@my.yorku.ca</a><br>
-                    Phone: 647-852-2591
-                </p>
-            </li>
-        </ul>
-    </div>
     <nav>
         <div class="navBarC">
             <div class="logoC"><a href="index.html"><img src="style/photos/logo.png"></a></div>
@@ -60,5 +26,51 @@
         </div>
         <div class="navLogC"><a href="login.html"><button>Login</button></a></div>
     </nav>
+    <main>
+        <form>
+            <div class="contactUsC">
+                <h2>Get In Touch</h2>
+                <ul>
+                    <li><label style="margin-left: 4.8vw;">First Name</label><label style="margin-left: 10vw;">Last Last</label></li>
+                    <li><input type="text" placeholder="First Name" maxlength="15" required><input type="text" placeholder="Last Name" maxlength="15" required></li>
+                    <li><label style="margin-left: 6.3vw;">Email</label><label style="margin-left: 10vw;">Phone Number</label></li>
+                    <li><input type="text" placeholder="Email Address" maxlength="30" required><input type="text" placeholder="Phone Number" maxlength="16" required></li>
+                    <li><textarea maxlength="350" placeholder="Type your message here" required></textarea></li>
+                </ul>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+        <div class="contactC">
+            <h1>Personal Contact</h1>
+            <ul>
+                <li>
+                    <h3>Bhagya Vithanage</h3>
+                    <p>
+                        Email: <a href="mailto:bhagyav@my.yorku.ca" style="color: white;">bhagyav@my.yorku.ca</a><br>
+                        Phone: 647-764-6222
+                    </p>
+                </li> <li>
+                    <h3>Shlok Desai</h3>
+                    <p>
+                        Email: <a href="mailto:shlok64@my.yorku.ca" style="color: white;">shlok64@my.yorku.ca</a><br>
+                        Phone: 519-328-4831
+                    </p>
+                </li> <li>
+                    <h3>Atheen Pahavathas</h3>
+                    <p>
+                        Email: <a href="mailto:atheen74@my.yorku.ca" style="color: white;">atheen74@my.yorku.ca</a><br>
+                        Phone: 647-852-2591
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!-- <footer>
+        <p>
+            <ul>
+                <li>Background image: https://tinyurl.com/bdf53ypu</li>
+            </ul>
+        </p>
+    </footer> -->
 </body>
 </html>

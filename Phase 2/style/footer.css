@@ -1,0 +1,10 @@
+footer {
+    background: rgba(20, 20, 20, 0.829);
+    color: white;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+    font-family: norm;
+    font-size: small;
+    width: 100vw;
+}
