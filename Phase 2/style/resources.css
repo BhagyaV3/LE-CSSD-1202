@@ -38,3 +38,9 @@ a {
 section .linkC a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 450px) {
+    p {
+        font-size: 5vw;
+    }
+}
