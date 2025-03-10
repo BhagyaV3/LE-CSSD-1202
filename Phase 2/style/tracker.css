@@ -75,3 +75,25 @@ body {
     top: 67%;
     left: 39.5%;
 }
+
+.calenderC {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 20vw;
+    background-color: white;
+    border: 1vw solid white;
+    border-radius: 1.5vw;
+}
+
+.calenderC .currentDateC {
+    color: black;
+    text-align: center;
+}
+
+.calenderC .calenderBodyC ul {
+    display: flex;
+    list-style-type: none;
+    color: black;
+    flex-wrap: wrap;
+}
