@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: url('photos/aboutcover.png');
+    background: url('photos');
     background-size: cover;
 }
 
@@ -31,7 +31,7 @@ h1 {
 }
 
 .aboutC div {
-    color: white;
+    color: black;
 }
 
 .aboutC div h3 {
@@ -40,7 +40,7 @@ h1 {
 }
 
 .aboutC div p {
-    border: 0.2vw dotted white;
+    border: 0.2vw dotted black;
     border-radius: 0.4vw;
     font-family: thine;
 }
