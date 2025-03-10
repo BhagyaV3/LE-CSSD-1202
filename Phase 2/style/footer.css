@@ -7,4 +7,7 @@ footer {
     font-family: norm;
     font-size: small;
     width: 100vw;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

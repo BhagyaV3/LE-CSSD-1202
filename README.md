@@ -1,13 +1,7 @@
-   - Tracker
-      - Make a calendar to the Foottracker's left
-      - Daily goals to the right (based on the widgets) (if possible)
   - Resources
      - If necessary, do research to sort the widgets and everything else accordingly Shlok
-   - Make the input widgets within the foot widgets
    - rename files
    - Make custom error messages
-  - Finalize the Resources pages
-  - Finalize the research
 
 
 
