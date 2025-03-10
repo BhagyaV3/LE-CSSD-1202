@@ -86,7 +86,7 @@ body {
     border-radius: 1.5vw;
 }
 
-.calenderC header .iconc img {
+.calenderC .iconc img {
     position: absolute;
     top: 1vw;
 }
