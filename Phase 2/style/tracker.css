@@ -33,7 +33,7 @@ body {
 }
 
 .footC {
-    list-style-type: none;
+    /* list-style-type: none; */
     display: flex;
 }
 
