@@ -169,6 +169,12 @@ body {
         width: 45vw;
         height: 45vh;
     }
+
+    .loginC .epC input {
+        position: relative;
+        right: 4vh;
+        width: 55vw;
+    }    
 }
 
 @media (max-width: 1100px) {
