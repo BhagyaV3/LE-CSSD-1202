@@ -86,6 +86,11 @@ body {
     border-radius: 1.5vw;
 }
 
+.calenderC header .iconc img {
+    position: absolute;
+    top: 1vw;
+}
+
 .calenderC .currentDateC {
     color: black;
     text-align: center;
