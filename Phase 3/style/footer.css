@@ -1,5 +1,5 @@
 footer {
-    background: rgba(0, 0, 0, 0.829);
+    background: rgba(0, 0, 0, 0.532);
     color: white;
     text-align: left;
     padding: 10px;
@@ -10,6 +10,11 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    color: rgb(126, 188, 255);
 }
 
 @media (max-width: 450px) {
