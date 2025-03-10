@@ -129,20 +129,13 @@ main {
     font-family: thine;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .contactUsC {
         opacity: 0;
     }
 
     .contactC {
-        position: relative;
-        right: 60vw;
+        left: -60vw;
     }
 
     .contactC h1 {
@@ -152,7 +145,7 @@ footer {
     }
 
     .contactC ul li {
-        font-size: 4vw;
+        font-size: 5vw;
         position: relative;
         top: 2vh;
     }
