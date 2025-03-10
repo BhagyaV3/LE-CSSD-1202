@@ -135,14 +135,65 @@ footer {
     width: 100%;
 }
 
-/* @media (max-width: 450px) {
-    .aboutC div p {
-        font-size: xx-small;
+@media (max-width: 450px) {
+    .contactUsC {
+        opacity: 0;
+    }
+
+    .contactC {
+        position: relative;
+        right: 60vw;
+    }
+
+    .contactC h1 {
+        font-size: 5vw;
+        left: 18vw;
+        top: 15vh;
+    }
+
+    .contactC ul li {
+        font-size: 4vw;
+        position: relative;
+        top: 2vh;
     }
 }
 
 @media (max-width: 1100px) {
-    body {
-        background-color: rgba(14, 14, 14, 0.5); 
+    .contactUsC {
+        right: 10vw;
     }
-} */
+
+    .contactUsC button {
+        position: relative;
+        left: 5vw;
+        font-size: 2vw;
+        width: 20vw;
+    }
+
+    .contactUsC ul li input {
+        position: relative;
+        left: 6vw;
+        top: 1vh;
+    }
+    .contactUsC ul li textarea {
+        left: 5vw;
+    }
+
+    .contactC {
+        position: relative;
+        right: 30vw;
+    }
+
+    .contactC h1 {
+        font-size: 5vw;
+        left: 18vw;
+        top: 15vh;
+    }
+
+    .contactC ul li {
+        font-size: 3vw;
+        position: relative;
+        left: 6vw;
+        top: 5vh;
+    }
+}
