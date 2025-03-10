@@ -71,43 +71,45 @@ footer {
 }
 
 .footC {
+    /* list-style-type: none; */
     display: flex;
-    position: absolute;
-    top: -10vh;
-    left: 25vw;
-    transform-origin: center;
 }
 
 .footC div {
-    position: relative;
+    transition: transform 0.3s ease;
+    position: absolute;
+}
+
+.footC div:hover {
+    transform: scale(1.2);
 }
 
 #carbon {
-    top: 20vh;
-    left: 37.5vw;
+    top: 15%;
+    left: 62.5%;
 }
 
 #electricity {
-    top: 38.75vh;
-    left: 20.5vw;
+    top: 34%;
+    left: 68.5%;
 }
 
 #transportation {
-    top: 40vh;
-    left: 20vw;
+    top: 35%;
+    left: 75%;
 }
 
 #food {
-    top: 49vh;
-    left: 9.5vw;
+    top: 44.2%;
+    left: 69.75%;
 }
 
 #waste {
-    top: 59vh;
-    left: 0.0001vw;
+    top: 54%;
+    left: 68.75%;
 }
 
 #water {
-    top: 68vh;
-    left: -8.5vw;
+    top: 63%;
+    left: 68.5%;
 }
