@@ -77,18 +77,21 @@ body {
 }
 
 .calenderC {
+    position: relative;
+    left: 2vw;
+    top: 35vh;
     display: flex;
     align-items: center;
     justify-content: left;
-    width: 20vw;
+    width: 30vw;
     background-color: white;
     border: 1vw solid white;
     border-radius: 1.5vw;
 }
 
-.calenderC .iconc img {
-    position: absolute;
-    top: 1vw;
+.calenderC .iconC img {
+    position: relative;
+    top: -0.2vh;
 }
 
 .calenderC .currentDateC {
@@ -101,4 +104,12 @@ body {
     list-style-type: none;
     color: black;
     flex-wrap: wrap;
+}
+
+.calenderC .calenderBodyC .dayNameC li {
+    margin: 0 0.8vw;
+}
+
+.calenderC .calenderBodyC .dayC li {
+    margin: 0 1.1vw;
 }
