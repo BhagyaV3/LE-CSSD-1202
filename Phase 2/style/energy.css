@@ -1,0 +1,9 @@
+body {
+    background-color: white;
+    background-image: url('photos/sky.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    text-align: left;
+    position: relative;
+
+}
