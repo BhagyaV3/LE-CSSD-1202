@@ -15,12 +15,10 @@ function getInfo(event) {
 
     for (var i = 0; i < loginInfo.length; i++) {
         if (email == loginInfo[i].email && password == loginInfo[i].password) {
-            console.log(email + " is logged in!!!");
             location.replace("./tracker.html");
             return;
         }
     }
-    console.log("Incorrect email or password");
     alert("Incorrect email or password! Please try again.");
 }
 

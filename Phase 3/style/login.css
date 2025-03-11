@@ -108,6 +108,7 @@ body {
     border-radius: 10vw;
     border: none;
     font-size: 1.4vw;
+    z-index: 500;
 }
 
 .loginC .submitC button:hover {

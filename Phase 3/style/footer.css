@@ -21,7 +21,7 @@ footer .googleTranslate {
     font-family: norm;  
     font-size: small;  
     position: fixed;  
-    bottom: 8vh;  
+    bottom: 0;  
     right: 1vw; 
     z-index: 50;  
 }

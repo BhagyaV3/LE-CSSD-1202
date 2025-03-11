@@ -105,6 +105,7 @@ main {
     padding: 1vw;
     margin: 5vh;
     color: white;
+    z-index: 11;
 }
 
 .contactC ul li {
