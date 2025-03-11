@@ -54,7 +54,7 @@
         </div>
     </main>
     <footer>
-        <p>Image credits:</p>
+        <p>Image credits:</p> <div class="googleTranslate" id="google_translate_element"></div>
         <ul>
             <li>Background image: <a href="" target="_blank">https://shorturl.at/c2hLE</a></li>
             <li>
@@ -64,5 +64,14 @@
             </li>
         </ul>
     </footer>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: "en"},
+                "google_translate_element"
+            )
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

@@ -6,16 +6,26 @@ footer {
     margin: 0;
     font-family: norm;
     font-size: small;
-    width: 100vw;
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 10;
 }
 
 footer ul li a:hover {
     text-decoration: underline;
     color: rgb(126, 188, 255);
 }
+
+footer .googleTranslate {  
+    font-family: norm;  
+    font-size: small;  
+    position: fixed;  
+    bottom: 8vh;  
+    right: 1vw; 
+    z-index: 50;  
+}
+
 
 @media (max-width: 450px) {
     footer {
