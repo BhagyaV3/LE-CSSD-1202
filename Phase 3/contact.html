@@ -32,12 +32,12 @@
                 <h2>Get In Touch</h2>
                 <ul>
                     <li><label style="margin-left: 4.8vw;">First Name</label><label style="margin-left: 10vw;">Last Last</label></li>
-                    <li><input type="text" placeholder="First name" maxlength="15" required><input type="text" placeholder="Last name" maxlength="15" required></li>
+                    <li><input type="text" placeholder="First name" maxlength="15" id="fName" required><input type="text" placeholder="Last name" maxlength="15" id="lName" required></li>
                     <li><label style="margin-left: 6.3vw;">Email</label><label style="margin-left: 10vw;">Phone Number</label></li>
-                    <li><input type="text" placeholder="Email address" maxlength="30" required><input type="text" placeholder="Phone number" maxlength="16" required></li>
-                    <li><textarea maxlength="350" placeholder="Type your message here" required></textarea></li>
+                    <li><input type="text" placeholder="Email address" maxlength="30" id="email" required><input type="text" placeholder="Phone number" maxlength="16" id="phone" required></li>
+                    <li><textarea maxlength="350" placeholder="Type your message here" id="message" required></textarea></li>
                 </ul>
-                <button type="submit">Send</button>
+                <button type="submit" id="sendEmailButton">Send</button>
             </div>
         </form>
         <div class="contactC">
@@ -72,6 +72,15 @@
         </ul>
     </footer>
 </body>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("u-aeJLaI13e6aMy66");
+        })();
+    </script>
+    <script src="scripts/email.js"></script>
     <script src="scripts/translate.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </html>
