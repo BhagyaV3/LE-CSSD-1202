@@ -18,6 +18,8 @@ function addInfo(event) {
 
     loginInfo.push({name, email, password});
     console.log(loginInfo)
+    location.replace("./login.html");
+    alert("Signed Up Successfully")
 }
 
 function getInfo(event) {
