@@ -6,7 +6,7 @@ var loginInfo = [
     },
     {
         name: "bhagya",
-        email: "bhagya@gmail.com",
+        email: "bhagyaisGoober@gmail.com",
         password: "bhag111" 
     }
 ];
