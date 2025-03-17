@@ -7,7 +7,7 @@ var loginInfo = [
     {
         name: "bhagya",
         email: "bhagyaisGoober@gmail.com",
-        password: "bhag111" 
+        password: "bhag111??" 
     }
 ];
 
@@ -29,6 +29,7 @@ function getInfo(event) {
     for (var i = 0; i < loginInfo.length; i++) {
         if (email == loginInfo[i].email && password == loginInfo[i].password) {
             location.replace("./tracker.html");
+            alert("Login Successful")
             return;
         }
     }
