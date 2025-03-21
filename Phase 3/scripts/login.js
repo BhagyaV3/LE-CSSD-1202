@@ -1,20 +1,20 @@
-var loginInfo = [
+let loginInfo = [
     {
         name: "shlok",
         email: "shlok@gmail.com",
         password: "shlok123"
     },
     {
-        name: "bhagya",
+        name: "bhagya vintanagay",
         email: "bhagyaisGoober@gmail.com",
         password: "bhag111??" 
     }
 ];
 
 function addInfo(event) {
-    var name = document.getElementById('nameInput').value
-    var email = document.getElementById('emailInput').value
-    var password = document.getElementById('passwordInput').value
+    let name = document.getElementById('nameInput').value
+    let email = document.getElementById('emailInput').value
+    let password = document.getElementById('passwordInput').value
 
     loginInfo.push({name, email, password});
     console.log(loginInfo)
@@ -23,13 +23,13 @@ function addInfo(event) {
 }
 
 function getInfo(event) {
-    var email = document.getElementById('emailInput').value;
-    var password = document.getElementById('passwordInput').value;
+    let email = document.getElementById('emailInput').value;
+    let password = document.getElementById('passwordInput').value;
 
-    for (var i = 0; i < loginInfo.length; i++) {
-        if (email == loginInfo[i].email && password == loginInfo[i].password) {
+    for (let login of loginInfo) {
+        if (email == login.email && password == login.password) {
             location.replace("./tracker.html");
-            alert("Login Successful")
+            alert("Login Successful");
             return;
         }
     }
