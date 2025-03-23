@@ -6,8 +6,7 @@ function sendEmail(event) {
     event.preventDefault();
 
     let info = {
-        first_name: document.getElementById('fName').value,
-        last_name: document.getElementById('lName').value,
+        from_name: document.getElementById('fName').value + " " + document.getElementById('lName').value,
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         message: document.getElementById('message').value
@@ -17,11 +16,11 @@ function sendEmail(event) {
     emailRegEx = /[a-z]+\.?\@[a-z]+\.[a-z]+/;
     phoneRegEx = /[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9]/
 
-    if (!(fNameRegEx.test(info[first_name]))) {
+    if (!(fNameRegEx.test(info[from_name].slice(0, from_name.indexOf(" "))))) {
         alert("Invalid first name format.");
         return;
     }
-    else if (!(lNameRegEx.test(info[last_name]))) {
+    if (!(lNameRegEx.test(info[from_name].slice(from_name.indexOf(" "), from_name.length)))) {
         alert("Invalid last name format.");
         return;
     }

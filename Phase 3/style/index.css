@@ -99,20 +99,20 @@ body {
     left: 68.5%;
 }
 
-/* .popupC {
+.popupC {
     position: relative;
-    left: 7vw;
+    left: 80vw;
     top: 30vh;
-    width: 40vw;
-    height: 25vh;
-    background: transparent;
-    padding: 50px;
-    border-radius: 50px;
+    width: 15vw;
+    height: 17.5vh;
+    background-color: rgba(149, 202, 26, 0.767);
+    padding: 15px;
+    border-radius: 25px;
     border: 2px dashed rgb(255, 255, 255);
     box-shadow: 0 0 1vw rgba(255, 255, 255, 0.329);
     font-family: norm;
     text-align: left;
-} */
+}
 
 @media (max-width: 500px) {
     .indexC {
