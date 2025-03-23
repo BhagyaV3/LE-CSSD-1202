@@ -23,7 +23,7 @@ function makeOTP() {
     password = document.getElementById('passwordInput').value;
     nameRegEx = /[A-Z][a-z]+\s?[A-Z][a-z]+/;
     emailRegEx = /[a-z]+\@[a-z]+\.[a-z]+/;
-    paswordRegEx = /[^a-zA-Z0-9]/;
+    paswordRegEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).*$/;
 
 
     console.log(paswordRegEx.test(password));
@@ -31,14 +31,10 @@ function makeOTP() {
     if (!(nameRegEx.test(nameJ))) {
         alert("Invalid name format. Please type your name like this: First Last");
         return;
-    }
-
-    if (!(emailRegEx.test(email))) {
+    } else if (!(emailRegEx.test(email))) {
         alert("Invalid email format. Please type your email like this: username@domain.tld");
         return;
-    }
-
-    if (!(paswordRegEx.test(password) || password.length >= 8)) {
+    } else if ((paswordRegEx.test(password) || password.length >= 8)) {
         alert("Invalid password format. Your password should consist of at least 1 uppercase character, 1 lowercase character, 1 number and 1 special character (minimum 8 characters in total).");
         return;
     }
