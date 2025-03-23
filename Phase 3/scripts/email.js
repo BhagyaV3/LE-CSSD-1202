@@ -19,7 +19,7 @@ function sendEmail(event) {
         return;
     }
 
-    if (!(emailRegEx.test(nfo[email]))) {
+    if (!(emailRegEx.test(info[email]))) {
         alert("Invalid email format. Please type your email like this: username@domain.tld");
         return;
     }
