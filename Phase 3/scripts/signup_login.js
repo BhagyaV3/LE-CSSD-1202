@@ -11,24 +11,14 @@ let loginInfo = JSON.parse(sessionStorage.getItem('loginInfo')) || [
     }
 ];
 
-<<<<<<< HEAD:Phase 3/scripts/signup_login.js
-let otp = -1
-let name = "hi"
-=======
 let otp = null
 let nameJ = "hi"
->>>>>>> ca9db69495dbaa8789e05ac0c70dffcaca1b4da5:Phase 3/scripts/login.js
 let email = "hi"
 let password = "hi"
 let loginedIn = JSON.parse(sessionStorage.getItem('loginInfo')) || 0
 
-<<<<<<< HEAD:Phase 3/scripts/signup_login.js
-function makeOTP(event) {
-    name = document.getElementById('nameInput').value;
-=======
 function makeOtp() {
     nameJ = document.getElementById('nameInput').value;
->>>>>>> ca9db69495dbaa8789e05ac0c70dffcaca1b4da5:Phase 3/scripts/login.js
     email = document.getElementById('emailInput').value;
     password = document.getElementById('passwordInput').value;
     nameRegEx = /[A-Z][a-z]+\s?[A-Z][a-z]+/;
@@ -101,13 +91,7 @@ function addInfo() {
         loginedIn = 1;
         sessionStorage.setItem('loginedIn', JSON.stringify(loginedIn));
         location.replace("./login.html");
-<<<<<<< HEAD:Phase 3/scripts/signup_login.js
-        alert("Signed up successfully.");
-
-        loginedIn = 1;
-=======
         alert("Signed Up Successfully");
->>>>>>> ca9db69495dbaa8789e05ac0c70dffcaca1b4da5:Phase 3/scripts/login.js
         return;
     } else if (otp != userOtp) {
         alert("OTP dose not match what was sent.");
@@ -128,12 +112,8 @@ function getInfo() {
             document.getElementById("navLogJ").style.visibility = "hidden";
             sessionStorage.setItem("navLogJVisibility", "hidden");
             location.replace("./tracker.html");
-<<<<<<< HEAD:Phase 3/scripts/signup_login.js
-            alert("Login successful.");
-=======
             document.getElementById("")
             alert("Login Successful");
->>>>>>> ca9db69495dbaa8789e05ac0c70dffcaca1b4da5:Phase 3/scripts/login.js
             return;
         }
     }
