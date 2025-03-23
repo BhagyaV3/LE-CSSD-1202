@@ -22,8 +22,8 @@ function makeOTP() {
     email = document.getElementById('emailInput').value;
     password = document.getElementById('passwordInput').value;
     nameRegEx = /[A-Z][a-z]+\s?[A-Z][a-z]+/;
-    emailRegEx = /[a-z]+\@[a-z]+\.[a-z]+/;
-    paswordRegEx = /(?=.*[A-Z])(?=.*[a-z])(?=.*\W)(?=.*\d)/;
+    emailRegEx = /[a-z]+\.?[a-z]*\@[a-z]+\.[a-z]+/;
+    paswordRegEx = /(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^a-zA-Z0-9\s])/;
 
     if (!(nameRegEx.test(nameJ))) {
         alert("Invalid name format. Please type your name like this: First Last");
@@ -36,7 +36,7 @@ function makeOTP() {
     }
 
     if (!(paswordRegEx.test(password) || password.length >= 8)) {
-        alert("Invalid password format. Your password should consist of at least 1 uppercase character, 1 lowercase character, 1 special character and 1 number (minimum 8 characters in total).");
+        alert("Invalid password format. Your password should consist of at least 1 uppercase character, 1 lowercase character, 1 number and 1 special character (minimum 8 characters in total).");
         return;
     }
 
@@ -89,7 +89,7 @@ function addInfo() {
         loginInfo.forEach((user, index) => {console.log(`User ${index + 1}:`, user);});
         sessionStorage.setItem('loginInfo', JSON.stringify(loginInfo));
         location.replace("./login.html");
-        alert("Signed Up Successfully");
+        alert("Sign up successful.");
         return;
     } else if (otp != userOtp) {
         alert("OTP dose not match what was sent.");
@@ -113,7 +113,7 @@ function getInfo() {
             sessionStorage.setItem('loginedIn', JSON.stringify(loginedIn));
             location.replace("./tracker.html");
             document.getElementById("")
-            alert("Login Successful");
+            alert("Login successful.");
             return;
         }
     }
@@ -123,7 +123,7 @@ function getInfo() {
 function lockCheck(event) {
     if (loginedIn == 0) {
         event.preventDefault();
-        alert("You Must Login Before Using The Tracker!");
+        alert("You must login before using the Foottracker.");
     } else {
         return;
     }
