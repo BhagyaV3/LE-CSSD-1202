@@ -17,7 +17,7 @@ let email = "hi"
 let password = "hi"
 let loginedIn = JSON.parse(sessionStorage.getItem('loginInfo')) || 0
 
-function makeOtp() {
+function makeOTP() {
     nameJ = document.getElementById('nameInput').value;
     email = document.getElementById('emailInput').value;
     password = document.getElementById('passwordInput').value;
@@ -25,7 +25,7 @@ function makeOtp() {
     emailRegEx = /[a-z]+\@[a-z]+\.[a-z]+/;
     paswordRegEx = /(?=.*[A-Z])(?=.*[a-z])(?=.*\W)(?=.*\d)/;
 
-    if (!(nameRegEx.test(name))) {
+    if (!(nameRegEx.test(nameJ))) {
         alert("Invalid name format. Please type your name like this: First Last");
         return;
     }
@@ -50,7 +50,7 @@ function makeOtp() {
     otp = Math.floor(100000 + Math.random() * 900000);
 
     emailjs.send("service_oevleia", "template_4q41tfk", {
-        to_name: name,
+        to_name: nameJ,
         to_email: email,
         otp_code: otp
     }, "u-aeJLaI13e6aMy66")
@@ -85,11 +85,9 @@ function addInfo() {
     let userOtp = document.getElementById("emailInput").value;
 
     if (otp == userOtp) {
-        loginInfo.push({name, email, password});
+        loginInfo.push({nameJ, email, password});
         loginInfo.forEach((user, index) => {console.log(`User ${index + 1}:`, user);});
         sessionStorage.setItem('loginInfo', JSON.stringify(loginInfo));
-        loginedIn = 1;
-        sessionStorage.setItem('loginedIn', JSON.stringify(loginedIn));
         location.replace("./login.html");
         alert("Signed Up Successfully");
         return;
@@ -111,6 +109,8 @@ function getInfo() {
         if (email == login.email && password == login.password) {
             document.getElementById("navLogJ").style.visibility = "hidden";
             sessionStorage.setItem("navLogJVisibility", "hidden");
+            loginedIn = 1;
+            sessionStorage.setItem('loginedIn', JSON.stringify(loginedIn));
             location.replace("./tracker.html");
             document.getElementById("")
             alert("Login Successful");

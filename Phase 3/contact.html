@@ -32,9 +32,9 @@
                 <h2>Get In Touch</h2>
                 <ul>
                     <li><label style="margin-left: 4.8vw;">First Name</label><label style="margin-left: 10vw;">Last Last</label></li>
-                    <li><input type="text" placeholder="First name" maxlength="15" id="fName" required><input type="text" placeholder="Last name" maxlength="15" id="lName" required></li>
+                    <li><input type="text" placeholder="First name" maxlength="15" id="fName" autocomplete="off" required><input type="text" placeholder="Last name" maxlength="15" id="lName" autocomplete="off" required></li>
                     <li><label style="margin-left: 6.3vw;">Email</label><label style="margin-left: 10vw;">Phone Number</label></li>
-                    <li><input type="text" placeholder="Email address" maxlength="30" id="email" required><input type="text" placeholder="Phone number" maxlength="16" id="phone" required></li>
+                    <li><input type="text" placeholder="Email address" maxlength="30" id="emailInput" autocomplete="off" required><input type="text" placeholder="Phone number" maxlength="16" id="phoneInput" autocomplete="off" required></li>
                     <li><textarea maxlength="350" placeholder="Type your message here" id="message" required></textarea></li>
                 </ul>
                 <button type="submit" id="sendEmailButton">Send</button>
@@ -80,7 +80,9 @@
             emailjs.init("u-aeJLaI13e6aMy66");
         })();
     </script>
-    <script src="scripts/email.js" charset="UTF-8"></script>
+    <script src="scripts/enter.js"></script>
+    <script src="scripts/login.js" charset="UTF-8"></script>
+    <script src="scripts/email.js"></script>
     <script src="scripts/translate.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </html>
