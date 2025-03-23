@@ -14,7 +14,7 @@
         <div class="navBarC">
             <div class="logoC"><a href="index.html"><img src="style/photos/logo.png" alt="logo"></a></div>
             <ul class="listC">
-                <li><a href="tracker.html" style="color: white">Tracker</a><div class="spacerC">|</div></li>
+                <li><a href="tracker.html" id="trackerJ" style="color: white">Tracker</a><div class="spacerC">|</div></li>
                 <li class="dropdownParentC"><a>Resources<img src="style/photos/icons/down_arrow.png" alt="Not Found"></a><div class="spacerC">|</div>
                     <ul class="dropdownC">
                         <li><a href="energy_resources.html" style="color: white">Energy and Transportation</a></li>
@@ -40,9 +40,6 @@
                 </div>
                 <div class="showC"> 
                     <label><input type="checkbox" id="showPassBox"><span class="checkC"></span>Show Password</label>
-                </div> 
-                <div class="forgotC"> 
-                    <a href="forgotPassword.html">Forgot Password?</a>
                 </div>
                 <div class="submitC"><button type="button" id="loginButton" onclick="getInfo()">Login</button></div>
             </form><br>
@@ -56,6 +53,18 @@
         </ul>
     </footer>
 </body>
+    <script>
+        const showPassBox = document.getElementById('showPassBox');
+        const passwordInput = document.getElementById('passwordInput');
+
+        showPassBox.addEventListener('change', function() {
+            if (showPassBox.checked) {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        });
+    </script>
     <script src="scripts/login.js" charset="UTF-8"></script>
     <script src="scripts/translate.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

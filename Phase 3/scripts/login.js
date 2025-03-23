@@ -11,12 +11,18 @@ let loginInfo = JSON.parse(sessionStorage.getItem('loginInfo')) || [
     }
 ];
 
-function addInfo(event) {
-    let name = document.getElementById('nameInput').value;
-    let email = document.getElementById('emailInput').value;
-    let password = document.getElementById('passwordInput').value;
+let otp = -1
+let nameJ = "hi"
+let email = "hi"
+let password = "hi"
+let loginedIn = 0
 
-    if (name === "" || email === "" || password === "") {
+function makeOtp(event) {
+    nameJ = document.getElementById('nameInput').value;
+    email = document.getElementById('emailInput').value;
+    password = document.getElementById('passwordInput').value;
+
+    if (nameJ === "" || email === "" || password === "") {
         alert("One or more inputs are empty!");
         return;
     }
@@ -28,14 +34,59 @@ function addInfo(event) {
         }
     }
 
-    loginInfo.push({name, email, password});
+    otp = Math.floor(100000 + Math.random() * 900000);
 
-    loginInfo.forEach((user, index) => {console.log(`User ${index + 1}:`, user);});
+    emailjs.send("service_oevleia", "template_4q41tfk", {
+        to_name: nameJ,
+        to_email: email,
+        otp_code: otp
+    }, "u-aeJLaI13e6aMy66")
+    .then((response) => {
+        alert("An OTP has been sent to your email.");
+    })
+    .catch((error) => {
+        console.error("Error sending email", error);
+        alert("Failed to send OTP. Please try again.");
+    });
 
     sessionStorage.setItem('loginInfo', JSON.stringify(loginInfo));
 
-    location.replace("./login.html");
-    alert("Signed Up Successfully");
+    document.getElementById("pJ").style.visibility = "hidden";
+    document.getElementById("nJ").style.visibility = "hidden";
+    document.getElementById("showJ").style.visibility = "hidden";
+    document.getElementById("emailImgJ").style.visibility = "hidden";
+
+    document.getElementById("signupJ").style.height = "35vh";
+    document.getElementById("emailInput").placeholder = "Enter Your OTP Code From Email";
+    document.getElementById("emailInput").style.position = "relative";
+    document.getElementById("emailInput").style.top = "-5vh";
+    document.getElementById("emailInput").value = "";
+    document.getElementById("submitJ").innerText = "Verify";
+    document.getElementById("submitJ").style.position = "relative";
+    document.getElementById("submitJ").style.top = "-21vh";
+    document.getElementById("loginJ").style.top = "-23vh";
+    document.getElementById("submitJ").onclick = addInfo;
+}
+
+function addInfo() {
+    let userOtp = document.getElementById("emailInput").value;
+
+    if (otp == userOtp) {
+        loginInfo.push({nameJ, email, password});
+        loginInfo.forEach((user, index) => {console.log(`User ${index + 1}:`, user);});
+        sessionStorage.setItem('loginInfo', JSON.stringify(loginInfo));
+
+        location.replace("./login.html");
+        alert("Signed Up Successfully");
+
+        loginedIn = 1;
+        return;
+    } else if (otp != userOtp) {
+        alert("OTP dose not match what was sent!");
+        return;
+    }
+
+    alert("Input Box is empty!");
 }
 
 function getInfo(event) {
@@ -54,13 +105,11 @@ function getInfo(event) {
     alert("Incorrect email or password! Please try again.");
 }
 
-const showPassBox = document.getElementById('showPassBox');
-const passwordInput = document.getElementById('passwordInput');
-
-showPassBox.addEventListener('change', function() {
-    if (showPassBox.checked) {
-        passwordInput.type = 'text';
-    } else {
-        passwordInput.type = 'password';
+function lockCheck() {
+    if (loginedIn == 0) {
+        event.preventDefault();
+        console.log("YOO");
+    } else if (loginedIn == 1) {
+        console.log("HII")
     }
-});
+}

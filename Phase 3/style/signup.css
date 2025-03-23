@@ -141,18 +141,7 @@ body {
 }
 
 .signupC .nextC {
-    position: relative;
-    left: 9.3vw;
-    top: -2.3vh;
-}
-
-.signupC .nextC a:hover {
-    text-decoration: underline;
-}
-
-.signupC .nextC a:focus {
-    animation: nextPhase;
-    animation-duration: 2s;
+    opacity: 0;
 }
 
 .signupC .dropC {

@@ -14,7 +14,7 @@
         <div class="navBarC">
             <div class="logoC"><a href="index.html"><img src="style/photos/logo.png" alt="logo"></a></div>
             <ul class="listC">
-                <li><a href="tracker.html" style="color: white">Tracker</a><div class="spacerC">|</div></li>
+                <li><a href="tracker.html" id="trackerJ" style="color: white">Tracker</a><div class="spacerC">|</div></li>
                 <li class="dropdownParentC"><a>Resources<img src="style/photos/icons/down_arrow.png" alt="Not Found"></a><div class="spacerC">|</div>
                     <ul class="dropdownC">
                         <li><a href="energy_resources.html" style="color: white">Energy and Transportation</a></li>
@@ -27,19 +27,19 @@
         <div class="navLogC"><a href="login.html"><button>Login</button></a></div>
     </nav>
     <main>
-        <div class="signupC">
+        <div class="signupC" id="signupJ">
             <h1>Sign Up</h1>
             <form>
-                <div class="infoC">
-                    <div class="nC">
+                <div class="infoC" id="infoJ">
+                    <div class="nC" id="nJ">
                         <label for="name"><input type="text" id="nameInput" placeholder="Enter your name here" required></label>
                         <img src="style/photos/icons/nameicon.png" alt="name">
                     </div><br>
-                    <div class="eC">
+                    <div class="eC" id="eJ">
                         <label for="email"><input type="email" id="emailInput" placeholder="Enter your email here" required></label>
-                        <img src="style/photos/icons/email.png" alt="email">
+                        <img src="style/photos/icons/email.png" id="emailImgJ" alt="email">
                     </div><br>
-                    <div class="pC">
+                    <div class="pC" id="pJ">
                         <label for="pass"><input type="password" id="passwordInput" placeholder="Enter your password here" required> </label>
                         <img src="style/photos/icons/key.png" alt="key">
                     </div><br>
@@ -56,12 +56,12 @@
                         <option value="mce">I want to maintian my current carbon emissions</option>
                     </select>
                 </div><br>
-                <div class="showC"> 
+                <div class="showC" id="showJ"> 
                     <label><input type="checkbox" id="showPassBox"><span class="checkC"></span>Show Password</label>
                 </div>
-                <div class="registerNextC"><button name="userInfo" type="button" onclick="addInfo()">Submit</button></div><br>
+                <div class="registerNextC"><button name="userInfo" type="button" id="submitJ" onclick="makeOtp()">Submit</button></div><br>
             </form>
-            <div class="loginC"><label>Already Have An Account?<a style="color:white; text-decoration:none" href="login.html">Login</a></label></div>
+            <div class="loginC" id="loginJ"><label id="loginlJ">Already Have An Account?<a style="color:white;" id="loginaJ" href="login.html">Login</a></label></div>
         </div>
     </main>
     <footer>
@@ -71,6 +71,19 @@
         </ul>
     </footer>
 </body>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        const showPassBox = document.getElementById('showPassBox');
+        const passwordInput = document.getElementById('passwordInput');
+
+        showPassBox.addEventListener('change', function() {
+            if (showPassBox.checked) {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        });
+    </script>
     <script src="scripts/login.js"></script>
     <script src="scripts/translate.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
