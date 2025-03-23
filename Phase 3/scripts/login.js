@@ -31,7 +31,7 @@ function makeOTP() {
     } else if (!(emailRegEx.test(email))) {
         alert("Invalid email format. Please type your email like this: username@domain.tld");
         return;
-    } else if ((paswordRegEx.test(password) || password.length >= 8)) {
+    } else if (!(paswordRegEx.test(password) || password.length >= 8)) {
         alert("Invalid password format. Your password should consist of at least 1 uppercase character, 1 lowercase character, 1 number and 1 special character (minimum 8 characters in total).");
         return;
     }
