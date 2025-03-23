@@ -2,7 +2,7 @@ let loginInfo = JSON.parse(sessionStorage.getItem('loginInfo')) || [
     {
         name: "shlok",
         email: "shlok@gmail.com",
-        password: "Shlok123."
+        password: "shlok123"
     },
     {
         name: "bhagya vintanagay",
@@ -11,13 +11,13 @@ let loginInfo = JSON.parse(sessionStorage.getItem('loginInfo')) || [
     }
 ];
 
-let otp = -1
+let otp = null
 let nameJ = "hi"
 let email = "hi"
 let password = "hi"
-let loginedIn = 0
+let loginedIn = JSON.parse(sessionStorage.getItem('loginInfo')) || 0
 
-function makeOtp(event) {
+function makeOtp() {
     nameJ = document.getElementById('nameInput').value;
     email = document.getElementById('emailInput').value;
     password = document.getElementById('passwordInput').value;
@@ -75,11 +75,10 @@ function addInfo() {
         loginInfo.push({nameJ, email, password});
         loginInfo.forEach((user, index) => {console.log(`User ${index + 1}:`, user);});
         sessionStorage.setItem('loginInfo', JSON.stringify(loginInfo));
-
+        loginedIn = 1;
+        sessionStorage.setItem('loginedIn', JSON.stringify(loginedIn));
         location.replace("./login.html");
         alert("Signed Up Successfully");
-
-        loginedIn = 1;
         return;
     } else if (otp != userOtp) {
         alert("OTP dose not match what was sent!");
@@ -89,7 +88,7 @@ function addInfo() {
     alert("Input Box is empty!");
 }
 
-function getInfo(event) {
+function getInfo() {
     let email = document.getElementById('emailInput').value;
     let password = document.getElementById('passwordInput').value;
 
@@ -97,7 +96,10 @@ function getInfo(event) {
 
     for (let login of loginInfo) {
         if (email == login.email && password == login.password) {
+            document.getElementById("navLogJ").style.visibility = "hidden";
+            sessionStorage.setItem("navLogJVisibility", "hidden");
             location.replace("./tracker.html");
+            document.getElementById("")
             alert("Login Successful");
             return;
         }
@@ -105,11 +107,18 @@ function getInfo(event) {
     alert("Incorrect email or password! Please try again.");
 }
 
-function lockCheck() {
+function lockCheck(event) {
     if (loginedIn == 0) {
         event.preventDefault();
-        console.log("YOO");
-    } else if (loginedIn == 1) {
-        console.log("HII")
+        alert("You Must Login Before Using The Tracker!");
+    } else {
+        return;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const savedVisibility = sessionStorage.getItem("navLogJVisibility");
+    if (savedVisibility) {
+      document.getElementById("navLogJ").style.visibility = savedVisibility;
+    }
+  });
