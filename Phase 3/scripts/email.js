@@ -6,21 +6,36 @@ function sendEmail(event) {
     event.preventDefault();
 
     let info = {
-        from_name: document.getElementById('fName').value + " " + document.getElementById('lName').value,
+        first_name: document.getElementById('fName').value,
+        last_name: document.getElementById('lName').value,
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         message: document.getElementById('message').value
     };
-    nameRegEx = /[A-Z][a-z]+\s?[A-Z][a-z]+/;
-    emailRegEx = /[a-z]+\@[a-z]+\.[a-z]+/;
+    fNameRegEx = /[A-Z][a-z]+/;
+    lNameRegEx = /[A-Z][a-z]+/;
+    emailRegEx = /[a-z]+\.?\@[a-z]+\.[a-z]+/;
+    phoneRegEx = /[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9]/
 
-    if (!(nameRegEx.test(info[from_name]))) {
-        alert("Invalid name format. Please type your name like this: First Last");
+    if (!(fNameRegEx.test(info[first_name]))) {
+        alert("Invalid first name format.");
         return;
     }
+<<<<<<< HEAD
 
     if (!(emailRegEx.test(info[email]))) {
+=======
+    else if (!(lNameRegEx.test(info[last_name]))) {
+        alert("Invalid last name format.");
+        return;
+    }
+    else if (!(emailRegEx.test(info[email]))) {
+>>>>>>> b9d5863ed1f283c6b13933c1021d29d4332307fb
         alert("Invalid email format. Please type your email like this: username@domain.tld");
+        return;
+    }
+    else if (!(phoneRegEx.test(info[phone]))) {
+        alert("Invalid phone number format. Please type your phone number, following the NANP format, like this: NPA-NXX-XXX");
         return;
     }
 

@@ -99,6 +99,21 @@ body {
     left: 68.5%;
 }
 
+/* .popupC {
+    position: relative;
+    left: 7vw;
+    top: 30vh;
+    width: 40vw;
+    height: 25vh;
+    background: transparent;
+    padding: 50px;
+    border-radius: 50px;
+    border: 2px dashed rgb(255, 255, 255);
+    box-shadow: 0 0 1vw rgba(255, 255, 255, 0.329);
+    font-family: norm;
+    text-align: left;
+} */
+
 @media (max-width: 500px) {
     .indexC {
         left: 18vw;
