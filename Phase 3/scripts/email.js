@@ -11,6 +11,18 @@ function sendEmail(event) {
         phone: document.getElementById('phone').value,
         message: document.getElementById('message').value
     };
+    nameRegEx = /[A-Z][a-z]+\s?[A-Z][a-z]+/;
+    emailRegEx = /[a-z]+\@[a-z]+\.[a-z]+/;
+
+    if (!(nameRegEx.test(info[from_name]))) {
+        alert("Invalid name format. Please type your name like this: First Last");
+        return;
+    }
+
+    if (!(emailRegEx.test(nfo[email]))) {
+        alert("Invalid email format. Please type your email like this: username@domain.tld");
+        return;
+    }
 
     console.log(info)
 
@@ -19,7 +31,7 @@ function sendEmail(event) {
         .then(
             function () {
                 location.reload();
-                alert("Email Sent!!!");
+                alert("Email Sent!");
             },
             function (error) {
                 console.error("Error details:", error);

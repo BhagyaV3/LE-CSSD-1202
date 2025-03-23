@@ -12,18 +12,31 @@ let loginInfo = JSON.parse(sessionStorage.getItem('loginInfo')) || [
 ];
 
 let otp = -1
-let nameJ = "hi"
+let name = "hi"
 let email = "hi"
 let password = "hi"
 let loginedIn = 0
 
-function makeOtp(event) {
-    nameJ = document.getElementById('nameInput').value;
+function makeOTP(event) {
+    name = document.getElementById('nameInput').value;
     email = document.getElementById('emailInput').value;
     password = document.getElementById('passwordInput').value;
+    nameRegEx = /[A-Z][a-z]+\s?[A-Z][a-z]+/;
+    emailRegEx = /[a-z]+\@[a-z]+\.[a-z]+/;
+    paswordRegEx = /(?=.*[A-Z])(?=.*[a-z])(?=.*\W)(?=.*\d)/;
 
-    if (nameJ === "" || email === "" || password === "") {
-        alert("One or more inputs are empty!");
+    if (!(nameRegEx.test(name))) {
+        alert("Invalid name format. Please type your name like this: First Last");
+        return;
+    }
+
+    if (!(emailRegEx.test(email))) {
+        alert("Invalid email format. Please type your email like this: username@domain.tld");
+        return;
+    }
+
+    if (!(paswordRegEx.test(password) || password.length >= 8)) {
+        alert("Invalid password format. Your password should consist of at least 1 uppercase character, 1 lowercase character, 1 special character and 1 number (minimum 8 characters in total).");
         return;
     }
 
@@ -37,7 +50,7 @@ function makeOtp(event) {
     otp = Math.floor(100000 + Math.random() * 900000);
 
     emailjs.send("service_oevleia", "template_4q41tfk", {
-        to_name: nameJ,
+        to_name: name,
         to_email: email,
         otp_code: otp
     }, "u-aeJLaI13e6aMy66")
@@ -55,7 +68,6 @@ function makeOtp(event) {
     document.getElementById("nJ").style.visibility = "hidden";
     document.getElementById("showJ").style.visibility = "hidden";
     document.getElementById("emailImgJ").style.visibility = "hidden";
-
     document.getElementById("signupJ").style.height = "35vh";
     document.getElementById("emailInput").placeholder = "Enter Your OTP Code From Email";
     document.getElementById("emailInput").style.position = "relative";
@@ -68,25 +80,26 @@ function makeOtp(event) {
     document.getElementById("submitJ").onclick = addInfo;
 }
 
+
 function addInfo() {
     let userOtp = document.getElementById("emailInput").value;
 
     if (otp == userOtp) {
-        loginInfo.push({nameJ, email, password});
+        loginInfo.push({name, email, password});
         loginInfo.forEach((user, index) => {console.log(`User ${index + 1}:`, user);});
         sessionStorage.setItem('loginInfo', JSON.stringify(loginInfo));
 
         location.replace("./login.html");
-        alert("Signed Up Successfully");
+        alert("Signed up successfully.");
 
         loginedIn = 1;
         return;
     } else if (otp != userOtp) {
-        alert("OTP dose not match what was sent!");
+        alert("OTP dose not match what was sent.");
         return;
     }
 
-    alert("Input Box is empty!");
+    alert("Input box is empty.");
 }
 
 function getInfo(event) {
@@ -98,7 +111,7 @@ function getInfo(event) {
     for (let login of loginInfo) {
         if (email == login.email && password == login.password) {
             location.replace("./tracker.html");
-            alert("Login Successful");
+            alert("Login successful.");
             return;
         }
     }
