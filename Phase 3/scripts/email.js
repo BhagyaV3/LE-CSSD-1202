@@ -20,7 +20,7 @@ function sendEmail(event) {
         alert("Invalid first name format.");
         return;
     }
-    if (!(lNameRegEx.test(info[from_name].slice(from_name.indexOf(" "), from_name.length)))) {
+    else if (!(lNameRegEx.test(info[from_name].slice(from_name.indexOf(" ") + 1, from_name.length)))) {
         alert("Invalid last name format.");
         return;
     }
