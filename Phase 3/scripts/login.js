@@ -23,7 +23,10 @@ function makeOTP() {
     password = document.getElementById('passwordInput').value;
     nameRegEx = /[A-Z][a-z]+\s?[A-Z][a-z]+/;
     emailRegEx = /[a-z]+\@[a-z]+\.[a-z]+/;
-    paswordRegEx = /(?=.*[A-Z])(?=.*[a-z])(?=.*\W)(?=.*\d)/;
+    paswordRegEx = /[^a-zA-Z0-9]/;
+
+
+    console.log(paswordRegEx.test(password));
 
     if (!(nameRegEx.test(nameJ))) {
         alert("Invalid name format. Please type your name like this: First Last");
