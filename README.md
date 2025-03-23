@@ -1,7 +1,5 @@
 NOTES:
-
 - Bhagya:
-    - Fix Regular Exprestions so first and last name can be uncapitalized at the start, make it so . can be added to email (ie: shlok.desai@gmail.com), and password should require speical character aswell. and contact page.
     - Add pop-ups using setTime()/setInterval() on the Home and Resources pages on random Ecological Footprint-related statistics/facts when the user goes to those pages from somewhere else. When one of those pages is reached, the pop-up will stay active for 2 1/2 minutes.
     - Use the Window.scroll() event to make the Calendar shift left/right through the months.
     - The Progress Chart will also be resetted to show the information the user inputted through the Foottracker's sections on a previous day from the Calendar. If they click on a future day, the div will show empty values since that day is in the future. The day that's selected will be highlighted. We can use the Windows calendar to set the current day on the website. Make the HTML for the Progress Chart and connect the buttons to the chart.

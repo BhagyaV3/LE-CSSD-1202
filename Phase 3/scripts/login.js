@@ -22,7 +22,7 @@ function makeOTP() {
     email = document.getElementById('emailInput').value;
     password = document.getElementById('passwordInput').value;
     nameRegEx = /[A-Z][a-z]+\s?[A-Z][a-z]+/;
-    emailRegEx = /[a-z]+\@[a-z]+\.[a-z]+/;
+    emailRegEx = /[a-z]+\.?\@[a-z]+\.[a-z]+/;
     paswordRegEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).*$/;
 
     if (!(nameRegEx.test(nameJ))) {
