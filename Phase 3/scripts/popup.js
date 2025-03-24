@@ -14,8 +14,7 @@ let facts = [
 function showPopup() {
     popup = document.querySelector(".popupC");
     document.querySelectorAll(".popupC p")[1].textContent = facts[Math.floor(Math.random() * 10)];
-    // timerId = setTimeout(displayOff, 180000);
-    timerId = setTimeout(displayOff, 3000);
+    timerId = setTimeout(displayOff, 180000);
 }
 
 function displayOff() {
