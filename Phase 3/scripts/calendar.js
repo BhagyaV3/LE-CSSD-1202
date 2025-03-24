@@ -1,4 +1,6 @@
-const monthYear = document.getElementById('currentDateC');
+// Made calendar.js from this YouTube tutorial: https://www.youtube.com/watch?v=OcncrLyddAs
+
+const monthYear = document.getElementById('monthYearC');
 const dates = document.getElementById('datesC');
 const leftArrow = document.getElementById('leftArrowC');
 const rightArrow = document.getElementById('rightArrowC');
@@ -28,25 +30,26 @@ const updateCalendar = () => {
         const date = new Date(currentYear, currentMonth, i);
         const activeClass = date.toDateString() === new Date().
         toDateString() ? 'active' : '';
-        datesHTML += `<div class="date ${activeClass}"></div>`;
+        datesHTML += `<div class="date ${activeClass}">${i}</div>`;
     }
 
+    const nextDays = (firstDayIndex + totalDays) % 7 === 0 ? 0 : 7 - (firstDayIndex + totalDays) % 7;
     for (let i = 1; i <= 7 - lastDayIndex; i++) {
         const nextDate = new Date(currentYear, currentMonth + 1, i);
-        datesHTML += `<div class="date inactive">${nextDate.getDate()}</div`;
+        datesHTML += `<div class="date inactive">${nextDate.getDate()}</div>`;
     }
 
-    datesElement.innerHTML = datesHTML;
-
-    leftArrow.addEventListener('click', () => {
-        currentDate.setMonth(currentDate.getMonth() - 1);
-        updateCalendar();  
-    })
-
-    rightArrow.addEventListener('click', () => {
-        currentDate.setMonth(currentDate.getMonth() + 1);
-        updateCalendar();  
-    })
-
-    updateCalendar();
+    dates.innerHTML = datesHTML;
 }
+
+leftArrow.addEventListener('click', () => {
+    currentDate.setMonth(currentDate.getMonth() - 1);
+    updateCalendar();  
+})
+
+rightArrow.addEventListener('click', () => {
+    currentDate.setMonth(currentDate.getMonth() + 1);
+    updateCalendar();  
+})
+
+updateCalendar();
