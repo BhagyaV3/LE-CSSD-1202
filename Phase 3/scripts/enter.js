@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  
   document.getElementById('nameInput').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
       document.getElementById('submitJ').click();

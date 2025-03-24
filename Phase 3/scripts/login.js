@@ -131,3 +131,21 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("navLogJ").style.visibility = savedVisibility;
     }
   });
+
+document.addEventListener('keydown', function(event) {
+    const inputs = document.querySelectorAll('input');
+
+    const currentIndex = Array.from(inputs).indexOf(document.activeElement);
+
+    if (currentIndex === -1) return;
+
+    if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
+        if (currentIndex < inputs.length - 1) {
+            inputs[currentIndex + 1].focus();
+        }
+    } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
+        if (currentIndex > 0) {
+            inputs[currentIndex - 1].focus();
+        }
+    }
+});
