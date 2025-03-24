@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     const inputBoxes = document.querySelectorAll(".input-box");
     let currentindex = 0;
 
@@ -28,4 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
                 focusInput(index); 
              });
          });
-    });
+    }); */
