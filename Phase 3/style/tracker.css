@@ -31,6 +31,7 @@ body {
 
 .footC {
     display: flex;
+    cursor: pointer;
 }
 
 .footC div {
@@ -88,6 +89,7 @@ body {
 .calenderC .iconC img {
     position: relative;
     top: -0.2vh;
+    cursor: pointer;
 }
 
 .calenderC .currentDateC {
@@ -108,4 +110,30 @@ body {
 
 .calenderC .calenderBodyC .dayC li {
     margin: 0 1.1vw;
+}
+
+.userDataC {
+    position: absolute;
+
+    color: white;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.userDataC ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.userDataC li { 
+    text-align: center;
+    display: inline;
+}
+
+.userDataC .inputC {
+    gap: 1.8vw;
 }

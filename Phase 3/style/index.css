@@ -58,6 +58,7 @@ body {
 
 .footC {
     display: flex;
+    cursor: pointer;
 }
 
 .footC div {
