@@ -73,48 +73,98 @@ body {
     left: 39.5%;
 }
 
-.calenderC {
+/* Made calendar CSS from this YouTube tutorial: https://www.youtube.com/watch?v=OcncrLyddAs} */
+
+.calendarC {
     position: relative;
-    left: 2vw;
-    top: 35vh;
+    width: 30vw;
+    height: auto;
+    top: 30vh;
+    left: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 1.5vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.calendarHeaderC {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.monthYearC {
+    text-align: center;
+    font-weight: 600;
+    width: 150px;
+}
+
+.calendarHeaderC button {
     display: flex;
     align-items: center;
-    justify-content: left;
-    width: 30vw;
-    background-color: white;
-    border: 1vw solid white;
-    border-radius: 1.5vw;
-}
-
-.calenderC .iconC img {
-    position: relative;
-    top: -0.2vh;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
-.calenderC .currentDateC {
-    color: black;
+.daysC {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.dayC {
     text-align: center;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.507);
+    font-weight: 500;
+    font-family: norm;
 }
 
-.calenderC .calenderBodyC ul {
+.datesC {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+}
+
+.date {
     display: flex;
-    list-style-type: none;
-    color: black;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+    font-family: norm;
 }
 
-.calenderC .calenderBodyC .dayNameC li {
-    margin: 0 0.8vw;
+.date:hover, .date.active {
+    background: rgba(95, 163, 18, 0.753);
+    color: rgb(255, 255, 255);
 }
 
-.calenderC .calenderBodyC .dayC li {
-    margin: 0 1.1vw;
+.date.inactive {
+    color: rgba(147, 153, 141, 0.747);
+}
+
+.date.inactive:hover {
+    color: rgb(255, 255, 255);
 }
 
 .userDataC {
     position: absolute;
-
     color: white;
     top: 50%;
     right: 5%;

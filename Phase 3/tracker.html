@@ -46,67 +46,28 @@
                 <li id="waterValueJ">0 liters</li>
             </ul>
         </div>
-        <div class="calenderC">
-            <p class="currentDateC">March 2025</p>
-            <div class="iconC">
-                <img src="style/photos/icons/leftarrow.png" alt="Left Arrow">
-                <img src="style/photos/icons/rightarrow.png" alt="Right Arrow">
+    </body>
+        <!-- Made calendarC from this YouTube tutorial: https://www.youtube.com/watch?v=OcncrLyddAs-->
+        <div class="calendarC">
+            <div class="calendarHeaderC">
+                <button id="leftArrowC">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="monthYearC" id="monthYearC" style="font-family: norm;"></div>
+                <button id="rightArrowC">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
-            <div class="calenderBodyC">
-                <ul class="dayNameC">
-                    <li>Mon</li>
-                    <li>Tue</li>
-                    <li>Wed</li>
-                    <li>Thu</li>
-                    <li>Fri</li>
-                    <li>Sat</li>
-                    <li>Sun</li>
-                </ul>
-                <ul class="dayC">
-                    <li>23</li>
-                    <li>24</li>
-                    <li>25</li>
-                    <li>26</li>
-                    <li>27</li>
-                    <li>28</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li>11</li>
-                    <li>12</li>
-                    <li>13</li>
-                    <li>14</li>
-                    <li>15</li>
-                    <li>16</li>
-                    <li>17</li>
-                    <li>18</li>
-                    <li>19</li>
-                    <li>20</li>
-                    <li>21</li>
-                    <li>22</li>
-                    <li>23</li>
-                    <li>24</li>
-                    <li>25</li>
-                    <li>26</li>
-                    <li>27</li>
-                    <li>28</li>
-                    <li>29</li>
-                    <li>30</li>
-                    <li>31</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                </ul>
+            <div class="daysC">
+                <div class="dayC">Mon</div>
+                <div class="dayC">Tues</div>
+                <div class="dayC">Wed</div>
+                <div class="dayC">Thurs</div>
+                <div class="dayC">Fri</div>
+                <div class="dayC">Sat</div>
+                <div class="dayC">Sun</div>
             </div>
+            <div class="datesC" id="datesC"></div>
         </div>
         <div class="footC">
             <div id="carbon">
@@ -141,6 +102,7 @@
         </ul>
     </footer>
 </body>
+    <script src="scripts/calendar.js"></script>
     <script src="scripts/tracker.js"></script>
     <script src="scripts/login.js" charset="UTF-8"></script>
     <script src="scripts/translate.js"></script>
