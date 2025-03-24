@@ -46,10 +46,33 @@
                 <li id="waterValueJ">0 liters</li>
             </ul>
         </div>
-        <div class="calenderC">
-            <p class="currentDateC">March 2025</p>
-            <div class="iconC">
+        <div class="calendarC">
+            <div class="calendarHeaderC">
+                <button id="leftArrowC">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="monthYearC" id="monthYearC"></div>
+                <button id="rightArrowC">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="daysC">
+                <div class="day">Mon</div>
+                <div class="day">Tues</div>
+                <div class="day">Wed</div>
+                <div class="day">Thurs</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+                <div class="day">Sun</div>
+            </div>
+            <div class="datesC" id="datesC"></div>
+        </div>
+        <!-- <div class="calenderC">
+            <div id="currentDateC"></div>
+            <div id="leftArrowC">
                 <img src="style/photos/icons/leftarrow.png" alt="Left Arrow">
+            </div>
+            <div id="rightArrowC">
                 <img src="style/photos/icons/rightarrow.png" alt="Right Arrow">
             </div>
             <div class="calenderBodyC">
@@ -106,7 +129,7 @@
                     <li>4</li>
                     <li>5</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div class="footC">
             <div id="carbon">
@@ -141,6 +164,7 @@
         </ul>
     </footer>
 </body>
+    <script src="scripts/calendar.js"></script>
     <script src="scripts/tracker.js"></script>
     <script src="scripts/login.js" charset="UTF-8"></script>
     <script src="scripts/translate.js"></script>

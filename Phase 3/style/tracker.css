@@ -73,7 +73,47 @@ body {
     left: 39.5%;
 }
 
-.calenderC {
+.calendarC {
+    position: relative;
+    width: 30vw;
+    height: auto;
+    top: 35vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 1.5vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.calendarHeaderC {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.calendarHeaderC button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.daysC {
+    text-align: center;
+    padding: 5px;
+    color: rgba(146, 138, 138, 0.507);
+    font-weight: 500;
+}
+
+/* .calendarC {
     position: relative;
     left: 2vw;
     top: 35vh;
@@ -110,7 +150,7 @@ body {
 
 .calenderC .calenderBodyC .dayC li {
     margin: 0 1.1vw;
-}
+} */
 
 .userDataC {
     position: absolute;
