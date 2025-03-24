@@ -20,16 +20,11 @@ function sendEmail(event) {
         alert("Invalid first name format.");
         return;
     }
-<<<<<<< HEAD
-
-    if (!(emailRegEx.test(info[email]))) {
-=======
     else if (!(lNameRegEx.test(info[last_name]))) {
         alert("Invalid last name format.");
         return;
     }
     else if (!(emailRegEx.test(info[email]))) {
->>>>>>> b9d5863ed1f283c6b13933c1021d29d4332307fb
         alert("Invalid email format. Please type your email like this: username@domain.tld");
         return;
     }
