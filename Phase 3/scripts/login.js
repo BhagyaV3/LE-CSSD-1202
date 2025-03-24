@@ -15,7 +15,7 @@ let otp = null
 let nameJ = "hi"
 let email = "hi"
 let password = "hi"
-let loginedIn = JSON.parse(sessionStorage.getItem('loginInfo')) || 0
+let loginedIn = JSON.parse(sessionStorage.getItem('loginInfo')) || 1
 
 function makeOTP() {
     nameJ = document.getElementById('nameInput').value;
