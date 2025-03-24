@@ -131,22 +131,3 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("navLogJ").style.visibility = savedVisibility;
     }
   });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const inputs = document.querySelectorAll("input, button");
-    let index = 0;
-
-    inputs[index].focus();
-
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "ArrowDown") {
-            event.preventDefault();
-            index = (index + 1) % inputs.length;
-        }   else if (event.key === "ArrowUp") {
-            event.preventDefault();
-            index = (index - 1 + inputs.length) % inputs.length;
-
-        }
-        inputs[index].focus();
-        });
-  });
