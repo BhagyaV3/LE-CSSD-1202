@@ -17,11 +17,11 @@ let userData = JSON.parse(sessionStorage.getItem('loginInfo')) || [
 ];
 
 carbonImg.onclick = function () {
-    let userInput = prompt("Please Enter Your Carbon Emissions for the Day:");
+    let userInput = prompt("Please enter your carbon emissions for the day.");
 
     while (userInput !== null && !/^[0-9]*\.?[0-9]+$/.test(userInput)) {
         alert("You did not enter a valid number.");
-        userInput = prompt("Please Enter Your Carbon Emissions for the Day:");
+        userInput = prompt("Please enter your carbon emissions for the day.");
     }
 
     if (userInput) {
@@ -35,11 +35,11 @@ carbonImg.onclick = function () {
 };
 
 electricityImg.onclick = function () {
-    let userInput = prompt("Please Enter Your Electriciy Usage for the Day:");
+    let userInput = prompt("Please enter your electricity usage for the day.");
 
     while (userInput !== null && !/^[0-9]*\.?[0-9]+$/.test(userInput)) {
         alert("You did not enter a valid number.");
-        userInput = prompt("Please Enter Your Electriciy Usage for the Day:");
+        userInput = prompt("Please enter your electricity usage for the day.");
     }
 
     if (userInput) {
@@ -53,11 +53,11 @@ electricityImg.onclick = function () {
 };
 
 transportationImg.onclick = function () {
-    let userInput = prompt("Please Enter Your Total Time on Non-Public Transportation for the Day:");
+    let userInput = prompt("Please enter your total time on non-public transportation for the day.");
 
     while (userInput !== null && !/^[0-9]*\.?[0-9]+$/.test(userInput)) {
         alert("You did not enter a valid number.");
-        userInput = prompt("Please Enter Your Total Time on Non-Public Transportation for the Day:");
+        userInput = prompt("Please enter your total time on non-public transportation for the day.");
     }
 
     if (userInput) {
@@ -71,11 +71,11 @@ transportationImg.onclick = function () {
 };
 
 foodImg.onclick = function () {
-    let userInput = prompt("Please Enter Your Food Wastage for the Day:");
+    let userInput = prompt("Please enter your food wastage for the day.");
 
     while (userInput !== null && !/^[0-9]*\.?[0-9]+$/.test(userInput)) {
         alert("You did not enter a valid number.");
-        userInput = prompt("Please Enter Your Food Wastage for the Day:");
+        userInput = prompt("Please enter your food wastage for the day.");
     }
 
     if (userInput) {
@@ -89,11 +89,11 @@ foodImg.onclick = function () {
 };
 
 wasteImg.onclick = function () {
-    let userInput = prompt("Please Enter Your Non-Recycled Waste for the Day:");
+    let userInput = prompt("Please enter your non-recycled waste for the day.");
 
     while (userInput !== null && !/^[0-9]*\.?[0-9]+$/.test(userInput)) {
         alert("You did not enter a valid number.");
-        userInput = prompt("Please Enter Your Non-Recycled Waste for the Day:");
+        userInput = prompt("Please enter your non-recycled waste for the day.");
     }
 
     if (userInput) {
@@ -107,11 +107,11 @@ wasteImg.onclick = function () {
 };
 
 waterImg.onclick = function () {
-    let userInput = prompt("Please Enter Your Water Usage for the Day:");
+    let userInput = prompt("Please enter your water usage for the day.");
 
     while (userInput !== null && !/^[0-9]*\.?[0-9]+$/.test(userInput)) {
         alert("You did not enter a valid number.");
-        userInput = prompt("Please Enter Your Water Usage for the Day:");
+        userInput = prompt("Please enter your water usage for the day.");
     }
 
     if (userInput) {
