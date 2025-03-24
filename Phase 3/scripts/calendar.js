@@ -6,6 +6,7 @@ const leftArrow = document.getElementById('leftArrowC');
 const rightArrow = document.getElementById('rightArrowC');
 
 let currentDate = new Date();
+let selectedDate = null;
 
 const updateCalendar = () => {
     const currentYear = currentDate.getFullYear();
@@ -15,8 +16,7 @@ const updateCalendar = () => {
     const totalDays = lastDay.getDate();
     const firstDayIndex = firstDay.getDay();
     const lastDayIndex = lastDay.getDay();
-    const monthYearString = currentDate.toLocaleDateString
-    ('default', {month: 'long', year: 'numeric'});
+    const monthYearString = currentDate.toLocaleDateString('default', { month: 'long', year: 'numeric' });
     monthYear.textContent = monthYearString;
 
     let datesHTML = '';
@@ -28,9 +28,9 @@ const updateCalendar = () => {
 
     for (let i = 1; i <= totalDays; i++) {
         const date = new Date(currentYear, currentMonth, i);
-        const activeClass = date.toDateString() === new Date().
-        toDateString() ? 'active' : '';
-        datesHTML += `<div class="date ${activeClass}">${i}</div>`;
+        const activeClass = date.toDateString() === new Date().toDateString() ? 'active' : '';
+        const selectedClass = selectedDate && selectedDate.toDateString() === date.toDateString() ? 'selected' : '';
+        datesHTML += `<div class="date ${activeClass} ${selectedClass}" data-date="${date}">${i}</div>`;
     }
 
     const nextDays = (firstDayIndex + totalDays) % 7 === 0 ? 0 : 7 - (firstDayIndex + totalDays) % 7;
@@ -40,16 +40,38 @@ const updateCalendar = () => {
     }
 
     dates.innerHTML = datesHTML;
+
+    const dateElements = document.querySelectorAll('.date');
+    dateElements.forEach((dateElement) => {
+        dateElement.addEventListener('click', (e) => {
+            const clickedDate = new Date(e.target.getAttribute('data-date'));
+
+            selectedDate = clickedDate;
+            updateCalendar();
+        });
+    });
 }
 
 leftArrow.addEventListener('click', () => {
     currentDate.setMonth(currentDate.getMonth() - 1);
-    updateCalendar();  
-})
+    updateCalendar();
+});
 
 rightArrow.addEventListener('click', () => {
     currentDate.setMonth(currentDate.getMonth() + 1);
-    updateCalendar();  
-})
+    updateCalendar();
+});
+
+window.addEventListener('wheel', (event) => {
+    event.preventDefault();
+
+    if (event.deltaY > 0) {
+        currentDate.setMonth(currentDate.getMonth() + 1);
+    } else {
+        currentDate.setMonth(currentDate.getMonth() - 1);
+    }
+
+    updateCalendar();
+});
 
 updateCalendar();
